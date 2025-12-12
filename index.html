@@ -131,15 +131,13 @@
       </section>
 
       <!-- Featured Testimonial - MenFirst -->
-      <div class="Testimonials_testimonialsContainer__F_5v0" style="padding:4rem 2rem;">
-        <div class="Testimonials_testimonialCard__btAPH" style="max-width:900px;margin:0 auto;padding:3rem;">
-          <div class="Testimonials_rating__xBVqX"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
-          <blockquote class="Testimonials_quote__03kBn" style="font-size:1.25rem;line-height:1.8;">"The pay-on-results model is genius. I was skeptical at first - how could someone else fund our advertising? But it works exactly as promised. We got sales from day one, the dashboard shows me everything I need to know, and I love that we only pay after we've already made the sale. It's freed up so much cash flow that I can now invest in other areas of the business. The 27.5% order uplift in our first week alone made this a no-brainer decision."</blockquote>
-          <div class="Testimonials_author__7tVDE" style="margin-top:1.5rem;">
-            <div class="Testimonials_authorName__eBMNk" style="font-size:1.1rem;">Bea</div>
-            <div class="Testimonials_authorTitle__CPvjE">Founder</div>
-            <div class="Testimonials_authorCompany__Kfpma">MenFirst</div>
-          </div>
+      <div style="padding:4rem 2rem;background:linear-gradient(135deg, rgba(0, 217, 163, .03), rgba(10, 10, 10, .6));">
+        <div style="max-width:900px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;">
+          <img src="/assets/images/bea.jpeg" alt="Bea, Founder of MenFirst" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid #00d9a3;margin-bottom:1.5rem;"/>
+          <div class="Testimonials_rating__xBVqX" style="margin-bottom:1rem;"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
+          <blockquote style="font-size:1.35rem;line-height:1.9;color:#fff;font-style:italic;margin:0 0 1.5rem;max-width:800px;">"The pay-on-results model is genius. I was skeptical at first - how could someone else fund our advertising? But it works exactly as promised. We got sales from day one, the dashboard shows me everything I need to know, and I love that we only pay after we've already made the sale. It's freed up so much cash flow that I can now invest in other areas of the business. The <span style="color:#00d9a3;font-weight:600;">27.5% order uplift</span> in our first week alone made this a no-brainer decision."</blockquote>
+          <div style="color:#00d9a3;font-weight:700;font-size:1.1rem;">Bea</div>
+          <div style="color:#aaa;font-size:0.95rem;">Founder, MenFirst</div>
         </div>
       </div>
 
@@ -518,33 +516,236 @@
         </div>
       </section>
 
-      <!-- Testimonials -->
-      <div style="padding:4rem 2rem;background:#0a0a0a;">
-        <h2 style="font-size:2rem;font-weight:700;color:#fff;text-align:center;margin-bottom:3rem;">What Merchants Are Saying</h2>
-        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:2rem;max-width:1200px;margin:0 auto;">
-          
-          <div class="Testimonials_testimonialCard__btAPH" style="margin:0;">
-            <div class="Testimonials_rating__xBVqX"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
-            <blockquote class="Testimonials_quote__03kBn">"I have created 73 additional sales so far, every extra helps so I am glad I signed up."</blockquote>
-            <div class="Testimonials_author__7tVDE">
-              <div class="Testimonials_authorName__eBMNk">Adrian Turley</div>
-              <div class="Testimonials_authorTitle__CPvjE">Managing Director</div>
-              <div class="Testimonials_authorCompany__Kfpma">LPG Jets</div>
-            </div>
-          </div>
-          
-          <div class="Testimonials_testimonialCard__btAPH" style="margin:0;">
-            <div class="Testimonials_rating__xBVqX"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
-            <blockquote class="Testimonials_quote__03kBn">"Really happy. Working well on one site so far. May start on my second site. Hassle free way of doing click advertising. Saves me a lot of time and stress. Recommended."</blockquote>
-            <div class="Testimonials_author__7tVDE">
-              <div class="Testimonials_authorName__eBMNk">Graeme Shaw</div>
-              <div class="Testimonials_authorTitle__CPvjE">Managing Partner</div>
-              <div class="Testimonials_authorCompany__Kfpma">Magicbox</div>
-            </div>
-          </div>
-          
-        </div>
+      <!-- Testimonials Carousel -->
+      <div style="text-align:center;padding:3rem 2rem 0;">
+        <h2 style="font-size:2.25rem;font-weight:700;color:#fff;margin:0;">Merchants <span style="color:#e25555;">❤️</span> RetailerBoost</h2>
       </div>
+      <div class="Testimonials_testimonialsContainer__F_5v0">
+        <div id="testimonial-carousel" style="position:relative;overflow:hidden;">
+          <div id="testimonial-slides" style="display:flex;transition:transform 0.5s ease;">
+            
+            <div class="Testimonials_testimonialCard__btAPH" style="min-width:100%;box-sizing:border-box;">
+              <div class="Testimonials_rating__xBVqX"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
+              <blockquote class="Testimonials_quote__03kBn">"Really happy. Working well on one site so far. May start on my second site. Hassle free way of doing click advertising. Saves me a lot of time and stress. Recommended."</blockquote>
+              <div class="Testimonials_author__7tVDE">
+                <div class="Testimonials_authorName__eBMNk">Graeme Shaw</div>
+                <div class="Testimonials_authorTitle__CPvjE">Managing Partner</div>
+                <div class="Testimonials_authorCompany__Kfpma">Magicbox</div>
+              </div>
+            </div>
+            
+            <div class="Testimonials_testimonialCard__btAPH" style="min-width:100%;box-sizing:border-box;">
+              <div class="Testimonials_rating__xBVqX"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
+              <blockquote class="Testimonials_quote__03kBn">"This fantastic app has not just saved me time but also money. It has to be my favourite app. We have been getting many orders, and just paying for sales works so well for us. A big thank you to the team."</blockquote>
+              <div class="Testimonials_author__7tVDE">
+                <div class="Testimonials_authorName__eBMNk">Richard Brigham</div>
+                <div class="Testimonials_authorTitle__CPvjE">Director</div>
+                <div class="Testimonials_authorCompany__Kfpma">The Fashion Gift Shop</div>
+              </div>
+            </div>
+            
+            <div class="Testimonials_testimonialCard__btAPH" style="min-width:100%;box-sizing:border-box;">
+              <div class="Testimonials_rating__xBVqX"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
+              <blockquote class="Testimonials_quote__03kBn">"I am really pleased to see growth in sales and look forward to seeing further growth over time. It's a no-risk way of improving turnover."</blockquote>
+              <div class="Testimonials_author__7tVDE">
+                <div class="Testimonials_authorName__eBMNk">Alan Jenkins</div>
+                <div class="Testimonials_authorTitle__CPvjE">Owner</div>
+                <div class="Testimonials_authorCompany__Kfpma">Indi Menswear</div>
+              </div>
+            </div>
+            
+            <div class="Testimonials_testimonialCard__btAPH" style="min-width:100%;box-sizing:border-box;">
+              <div class="Testimonials_rating__xBVqX"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
+              <blockquote class="Testimonials_quote__03kBn">"No fuss at all in the installation. We've had 1 sale in the first month, 2 in the second. Our products are tough to sell online (mostly art prints). All sales that we wouldn't have had without the app - so 5 stars for generating sales without any risk or fuss at all."</blockquote>
+              <div class="Testimonials_author__7tVDE">
+                <div class="Testimonials_authorName__eBMNk">Baiba Auria</div>
+                <div class="Testimonials_authorTitle__CPvjE">Artist & Art Director</div>
+                <div class="Testimonials_authorCompany__Kfpma">Egoiste Gallery</div>
+              </div>
+            </div>
+            
+            <div class="Testimonials_testimonialCard__btAPH" style="min-width:100%;box-sizing:border-box;">
+              <div class="Testimonials_rating__xBVqX"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
+              <blockquote class="Testimonials_quote__03kBn">"Since integrating this service on 26 July 2023, we've seen over 180 orders worth more than $5.5K of incremental revenue for my store. This has boosted our revenue by 5%! Grateful for this fantastic partnership."</blockquote>
+              <div class="Testimonials_author__7tVDE">
+                <div class="Testimonials_authorName__eBMNk">Melanie Auld</div>
+                <div class="Testimonials_authorTitle__CPvjE">Founder and MD</div>
+                <div class="Testimonials_authorCompany__Kfpma">Spice Pots</div>
+              </div>
+            </div>
+            
+            <div class="Testimonials_testimonialCard__btAPH" style="min-width:100%;box-sizing:border-box;">
+              <div class="Testimonials_rating__xBVqX"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
+              <blockquote class="Testimonials_quote__03kBn">"We've been using this service for close to a year and it's easily the most valuable partner we work with for our store. It has provided us with completely hassle-free google ads that have driven incredible results - over 2000 orders!"</blockquote>
+              <div class="Testimonials_author__7tVDE">
+                <div class="Testimonials_authorName__eBMNk">Kieran Acharya</div>
+                <div class="Testimonials_authorTitle__CPvjE">Director</div>
+                <div class="Testimonials_authorCompany__Kfpma">False9Fits</div>
+              </div>
+            </div>
+            
+            <div class="Testimonials_testimonialCard__btAPH" style="min-width:100%;box-sizing:border-box;">
+              <div class="Testimonials_rating__xBVqX"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
+              <blockquote class="Testimonials_quote__03kBn">"We started using this service on 12 August 2023, since then it has brought in over 110 orders worth more than $7K of incremental revenue for my store. This has boosted our revenue by 10%!"</blockquote>
+              <div class="Testimonials_author__7tVDE">
+                <div class="Testimonials_authorName__eBMNk">Sean Bowler</div>
+                <div class="Testimonials_authorTitle__CPvjE">Owner</div>
+                <div class="Testimonials_authorCompany__Kfpma">Hammer Nutrition</div>
+              </div>
+            </div>
+            
+            <div class="Testimonials_testimonialCard__btAPH" style="min-width:100%;box-sizing:border-box;">
+              <div class="Testimonials_rating__xBVqX"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
+              <blockquote class="Testimonials_quote__03kBn">"I love simplicity. I don't have the time nor the know-how to run efficient ad campaigns. For a reasonable commission, they run ads and generate sales for us. It's great! Give it a try now!"</blockquote>
+              <div class="Testimonials_author__7tVDE">
+                <div class="Testimonials_authorName__eBMNk">Christina Charoniti</div>
+                <div class="Testimonials_authorTitle__CPvjE">Director & Owner</div>
+                <div class="Testimonials_authorCompany__Kfpma">Punk Cake</div>
+              </div>
+            </div>
+            
+            <div class="Testimonials_testimonialCard__btAPH" style="min-width:100%;box-sizing:border-box;">
+              <div class="Testimonials_rating__xBVqX"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
+              <blockquote class="Testimonials_quote__03kBn">"We started using this service in February 2024, and their campaigns have brought in over 190 orders worth more than $9K of incremental revenue for my store. This has boosted our revenue by 21%!"</blockquote>
+              <div class="Testimonials_author__7tVDE">
+                <div class="Testimonials_authorName__eBMNk">Antonio Loizzo</div>
+                <div class="Testimonials_authorTitle__CPvjE">CEO</div>
+                <div class="Testimonials_authorCompany__Kfpma">Scracchio</div>
+              </div>
+            </div>
+            
+            <div class="Testimonials_testimonialCard__btAPH" style="min-width:100%;box-sizing:border-box;">
+              <div class="Testimonials_rating__xBVqX"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
+              <blockquote class="Testimonials_quote__03kBn">"I started using this on 8 January 2024, and since then, it has generated over 160 orders worth more than $11K of incremental revenue for my store. This has boosted our revenue by 14%! The setup was a breeze."</blockquote>
+              <div class="Testimonials_author__7tVDE">
+                <div class="Testimonials_authorName__eBMNk">Rabindra Jung Lamichhane</div>
+                <div class="Testimonials_authorTitle__CPvjE">Director</div>
+                <div class="Testimonials_authorCompany__Kfpma">Gini London</div>
+              </div>
+            </div>
+            
+            <div class="Testimonials_testimonialCard__btAPH" style="min-width:100%;box-sizing:border-box;">
+              <div class="Testimonials_rating__xBVqX"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
+              <blockquote class="Testimonials_quote__03kBn">"Since adopting this service back in August 2022, their campaigns have generated over 1400 orders worth more than $37K of incremental revenue for my store. This has boosted our revenue by 27%!"</blockquote>
+              <div class="Testimonials_author__7tVDE">
+                <div class="Testimonials_authorName__eBMNk">Warren Davis</div>
+                <div class="Testimonials_authorTitle__CPvjE">Owner</div>
+                <div class="Testimonials_authorCompany__Kfpma">Showbox Treats</div>
+              </div>
+            </div>
+            
+            <div class="Testimonials_testimonialCard__btAPH" style="min-width:100%;box-sizing:border-box;">
+              <div class="Testimonials_rating__xBVqX"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
+              <blockquote class="Testimonials_quote__03kBn">"Since integrating this on 31 July 2023, it has provided over 890 orders worth more than $30K of incremental revenue for my store. This has boosted our revenue by 10%! Setup was so simple."</blockquote>
+              <div class="Testimonials_author__7tVDE">
+                <div class="Testimonials_authorName__eBMNk">Will Marston</div>
+                <div class="Testimonials_authorTitle__CPvjE">CEO, Star Editions</div>
+                <div class="Testimonials_authorCompany__Kfpma">Mr Men</div>
+              </div>
+            </div>
+            
+            <div class="Testimonials_testimonialCard__btAPH" style="min-width:100%;box-sizing:border-box;">
+              <div class="Testimonials_rating__xBVqX"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
+              <blockquote class="Testimonials_quote__03kBn">"Absolutely love this! I installed it on two client Shopify sites last year and the results are extremely impressive. On one, the shop owner no longer does his own advertising as this brings in enough sales for him."</blockquote>
+              <div class="Testimonials_author__7tVDE">
+                <div class="Testimonials_authorName__eBMNk">Justin</div>
+                <div class="Testimonials_authorTitle__CPvjE">eCommerce Consultant</div>
+              </div>
+            </div>
+            
+            <div class="Testimonials_testimonialCard__btAPH" style="min-width:100%;box-sizing:border-box;">
+              <div class="Testimonials_rating__xBVqX"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
+              <blockquote class="Testimonials_quote__03kBn">"Our orders through our website have more than doubled since we started. It saves a ton of time as we don't have to manage and fund the ads, paying only for results is great! Even during our slower summer months, we're seeing over 500 orders per month."</blockquote>
+              <div class="Testimonials_author__7tVDE">
+                <div class="Testimonials_authorName__eBMNk">Jon Wagstaff</div>
+                <div class="Testimonials_authorTitle__CPvjE">Managing Director</div>
+                <div class="Testimonials_authorCompany__Kfpma">Happy Candy</div>
+              </div>
+            </div>
+            
+            <div class="Testimonials_testimonialCard__btAPH" style="min-width:100%;box-sizing:border-box;">
+              <div class="Testimonials_rating__xBVqX"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
+              <blockquote class="Testimonials_quote__03kBn">"I am really pleased with the results for one of my stores, Festival Heaven. Since starting a year ago, it has led to significant growth, generating over 2,300 orders and significantly boosting sales. The pay-only-on-results model is great!"</blockquote>
+              <div class="Testimonials_author__7tVDE">
+                <div class="Testimonials_authorName__eBMNk">Angela Gilmour</div>
+                <div class="Testimonials_authorTitle__CPvjE">Company Director</div>
+                <div class="Testimonials_authorCompany__Kfpma">Festival Heaven</div>
+              </div>
+            </div>
+            
+            <div class="Testimonials_testimonialCard__btAPH" style="min-width:100%;box-sizing:border-box;">
+              <div class="Testimonials_rating__xBVqX"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
+              <blockquote class="Testimonials_quote__03kBn">"This service is brilliant. It gets you extra sales for an agreed commission. What more could you want and the team are great to work with."</blockquote>
+              <div class="Testimonials_author__7tVDE">
+                <div class="Testimonials_authorName__eBMNk">Paul Harfoot</div>
+                <div class="Testimonials_authorTitle__CPvjE">Founder</div>
+                <div class="Testimonials_authorCompany__Kfpma">Sprocket & Gear</div>
+              </div>
+            </div>
+            
+            <div class="Testimonials_testimonialCard__btAPH" style="min-width:100%;box-sizing:border-box;">
+              <div class="Testimonials_rating__xBVqX"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
+              <blockquote class="Testimonials_quote__03kBn">"I have created 73 additional sales so far, every extra helps so I am glad I signed up."</blockquote>
+              <div class="Testimonials_author__7tVDE">
+                <div class="Testimonials_authorName__eBMNk">Adrian Turley</div>
+                <div class="Testimonials_authorTitle__CPvjE">Managing Director</div>
+                <div class="Testimonials_authorCompany__Kfpma">LPG Jets</div>
+              </div>
+            </div>
+            
+            <div class="Testimonials_testimonialCard__btAPH" style="min-width:100%;box-sizing:border-box;">
+              <div class="Testimonials_rating__xBVqX"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
+              <blockquote class="Testimonials_quote__03kBn">"Started using this a few weeks ago and a very positive experience so far, support team have been very helpful when needed. Working to a fixed % for conversions is great for budgeting and we are seeing sales for items we wouldn't normally focus on."</blockquote>
+              <div class="Testimonials_author__7tVDE">
+                <div class="Testimonials_authorName__eBMNk">Gareth Haines</div>
+                <div class="Testimonials_authorTitle__CPvjE">Managing Director</div>
+                <div class="Testimonials_authorCompany__Kfpma">Montreux Music</div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="Testimonials_controls__zQlnm">
+          <button class="Testimonials_navButton__k0yxy" aria-label="Previous testimonial" onclick="moveCarousel(-1)">←</button>
+          <button class="Testimonials_navButton__k0yxy" aria-label="Next testimonial" onclick="moveCarousel(1)">→</button>
+        </div>
+        <div id="carousel-dots" class="Testimonials_dots__dXeMc"></div>
+      </div>
+      <script>
+        let currentSlide = 0;
+        const totalSlides = 18;
+        
+        // Generate dots
+        const dotsContainer = document.getElementById('carousel-dots');
+        for (let i = 0; i < totalSlides; i++) {
+          const dot = document.createElement('button');
+          dot.className = i === 0 ? 'Testimonials_dot__As_La Testimonials_dotActive__ltxUT' : 'Testimonials_dot__As_La';
+          dot.setAttribute('aria-label', 'Go to testimonial ' + (i + 1));
+          dot.onclick = function() { goToSlide(i); };
+          dotsContainer.appendChild(dot);
+        }
+        
+        function moveCarousel(direction) {
+          currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+          updateCarousel();
+        }
+        
+        function goToSlide(index) {
+          currentSlide = index;
+          updateCarousel();
+        }
+        
+        function updateCarousel() {
+          document.getElementById('testimonial-slides').style.transform = 'translateX(-' + (currentSlide * 100) + '%)';
+          const dots = document.querySelectorAll('#carousel-dots button');
+          dots.forEach((dot, i) => {
+            dot.className = i === currentSlide ? 'Testimonials_dot__As_La Testimonials_dotActive__ltxUT' : 'Testimonials_dot__As_La';
+          });
+        }
+        
+        // Auto-advance every 5 seconds
+        setInterval(() => moveCarousel(1), 5000);
+      </script>
 
       <!-- Footer CTA -->
       <section class="FooterCTA_section__uO_0T">
