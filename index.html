@@ -9,11 +9,23 @@
     <!-- Calendly widget -->
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    <title>RetailerBoost | Pay Only for Results</title>
+    <title>RetailerBoost | Incremental Sales | Pay Only for Results</title>
     <meta name="description" content="Get incremental orders on Google Ads and pay only for orders generated. CPA-based Google Ads management for USA merchants. We setup, manage, and fund your campaigns."/>
     <meta name="robots" content="noindex, nofollow, nocache"/>
     <meta name="googlebot" content="noindex, nofollow, noimageindex, max-video-preview:-1, max-image-preview:large, max-snippet:-1"/>
     <style>
+      /* Glow animation for nav CTA */
+      @keyframes glowPulse {
+        0%, 100% {
+          box-shadow: 0 0 5px rgba(0, 217, 163, 0.4), 0 0 10px rgba(0, 217, 163, 0.2);
+        }
+        50% {
+          box-shadow: 0 0 15px rgba(0, 217, 163, 0.6), 0 0 30px rgba(0, 217, 163, 0.4), 0 0 45px rgba(0, 217, 163, 0.2);
+        }
+      }
+      .Navigation_ctaButton__jQlAz {
+        animation: glowPulse 2.5s ease-in-out infinite;
+      }
       /* Ensure navigation CTA is visible on mobile */
       @media (max-width: 768px) {
         .Navigation_ctaButton__jQlAz {
@@ -26,8 +38,7 @@
           gap: 0.5rem !important;
         }
         .nav-cta-secondary {
-          font-size: 0.85rem !important;
-          padding: 0.5rem 1rem !important;
+          display: none !important;
         }
       }
       /* FAQ expand/collapse */
@@ -97,8 +108,7 @@
 
             <h1 class="Hero_headline__ASVgO">We Sell the Products<br/><span class="Hero_highlight__TtPR5">Google Is Currently Ignoring</span></h1>
 
-            <p class="Hero_subheadline__omnUM" style="font-size:1.4rem;font-weight:600;margin-bottom:0.5rem;">Fully Funded. 100% Incremental.</p>
-            <p class="Hero_subheadline__omnUM" style="font-size:1.1rem;opacity:0.9;">Works alongside your agency or team</p>
+            <p class="Hero_subheadline__omnUM">Fully Funded. 100% Incremental.<br/>Works alongside your agency or team.</p>
 
             <div class="Hero_ctaGroup__BKron">
               <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/sturrock/intro'});return false;" class="Hero_ctaPrimary____c6c">Book a Call</a>
@@ -106,7 +116,7 @@
             </div>
 
             <div class="Hero_socialProof__yuByx">
-              <p class="Hero_socialProofText___wM8K">Trusted by retailers generating $1.5 Billion+ annually on Google Shopping</p>
+              <p class="Hero_socialProofText___wM8K">From the team that generated $1.5 Billion in 2024 for the worlds biggest brands</p>
               <div class="Hero_logoGrid__N1_yC">
                 <div class="Hero_logoItem__wgk3m"><img alt="Boohoo" loading="lazy" width="120" height="30" decoding="async" data-nimg="1" style="color:transparent" src="/assets/images/boohoo.svg"/></div>
                 <div class="Hero_logoItem__wgk3m"><img alt="Disney" loading="lazy" width="100" height="30" decoding="async" data-nimg="1" style="color:transparent" src="/assets/images/disney.svg"/></div>
@@ -303,13 +313,33 @@
                 </div>
               </div>
               
-              <div class="faq-item" style="border-bottom:none;">
+              <div class="faq-item">
                 <button class="faq-question" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
                   <h4>How can I verify your tracking is accurate?</h4>
                   <span class="faq-icon">+</span>
                 </button>
                 <div class="faq-answer">
                   <p>You can inspect our <a href="https://app.retailerboost.com/js/retailerboost.min.js?store=YOUR_STORE_ID" target="_blank" rel="noopener noreferrer" style="color:#00d9a3;text-decoration:none;">attribution script</a> directly - feel free to paste it into ChatGPT to see exactly what it does. Many merchants also run third-party attribution tools alongside ours to compare data collection. We encourage this so you can verify our tracking against your own tools and explore different attribution models.</p>
+                </div>
+              </div>
+              
+              <div class="faq-item">
+                <button class="faq-question" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
+                  <h4>How is this profitable for RetailerBoost?</h4>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>We operate as a performance-based affiliate. We run a large portfolio of merchants and treat each store as an investment. We risk-assess every store before committing our capital, then double down on winners and scale back on stores that lose us money. Because we only earn when you earn, we're completely aligned with your success. The affiliate model means we can spread risk across many merchants while focusing our resources on the stores with the best performance.</p>
+                </div>
+              </div>
+              
+              <div class="faq-item" style="border-bottom:none;">
+                <button class="faq-question" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
+                  <h4>How much do you invest in ad spend?</h4>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>It's entirely performance-based. There's theoretically no limit - we keep scaling our budget until we find the ceiling at the commission rate we've agreed. If your buried products are converting profitably for us, we'll keep investing more. The better your store performs, the more we spend to drive incremental sales for you.</p>
                 </div>
               </div>
             </div>
