@@ -1,508 +1,520 @@
-<!DOCTYPE html><!--WxZTAybvBsT5ApzcaxDJN-->
+<!DOCTYPE html>
 <html lang="en">
-  <head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link rel="preload" as="image" href="/assets/images/RetailerBoost-Logo-Green-White.png"/>
-  <link rel="stylesheet" href="/_next/static/css/7f4726b455727581.css" data-precedence="next"/>
-  <link rel="stylesheet" href="/_next/static/css/9ca7f0e1d91091e8.css" data-precedence="next"/>
-  <link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-57d7292b708c4567.js"/>
-  <script src="/_next/static/chunks/4bd1b696-c023c6e3521b1417.js" async=""></script>
-  <script src="/_next/static/chunks/255-c0bfd06c366bd1e0.js" async=""></script>
-  <script src="/_next/static/chunks/main-app-4435cebff8ae956a.js" async=""></script>
-  <script src="/_next/static/chunks/239-3c17a6d641bde0df.js" async=""></script>
-  <script src="/_next/static/chunks/app/layout-51bf5895f6bceb01.js" async=""></script>
-  <script src="/_next/static/chunks/app/not-found-bff04b01ffe661c1.js" async=""></script>
-  <script src="/_next/static/chunks/app/page-032e3acc52302c40.js" async=""></script><title>RetailerBoost | Pay Only for Results</title><meta name="description" content="Get incremental orders on Google Ads and pay only for orders generated. CPA-based Google Ads management for USA merchants. We setup, manage, and fund your campaigns."/><meta name="robots" content="noindex, nofollow, nocache"/><meta name="googlebot" content="noindex, nofollow, noimageindex, max-video-preview:-1, max-image-preview:large, max-snippet:-1"/>
-  <script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script>
-  <style>
-    /* Ensure navigation CTA is visible on mobile */
-    @media (max-width: 768px) {
-      .Navigation_ctaButton__jQlAz {
-        display: block !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-      }
-    }
-  </style>
-  <script>
-    // Override Alpha alert text after React hydration
-    document.addEventListener('DOMContentLoaded', function() {
-      setTimeout(function() {
-        var alertText = document.querySelector('.AlphaAlert_alertText__szN_k');
-        if (alertText && alertText.textContent.includes('Alpha is')) {
-          alertText.textContent = 'Now open for Shopify merchants in the USA';
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="preload" as="image" href="/assets/images/RetailerBoost-Logo-Green-White.png"/>
+    <link rel="stylesheet" href="/_next/static/css/7f4726b455727581.css" data-precedence="next"/>
+    <link rel="stylesheet" href="/_next/static/css/9ca7f0e1d91091e8.css" data-precedence="next"/>
+    <!-- Calendly widget -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <title>RetailerBoost | Pay Only for Results</title>
+    <meta name="description" content="Get incremental orders on Google Ads and pay only for orders generated. CPA-based Google Ads management for USA merchants. We setup, manage, and fund your campaigns."/>
+    <meta name="robots" content="noindex, nofollow, nocache"/>
+    <meta name="googlebot" content="noindex, nofollow, noimageindex, max-video-preview:-1, max-image-preview:large, max-snippet:-1"/>
+    <style>
+      /* Ensure navigation CTA is visible on mobile */
+      @media (max-width: 768px) {
+        .Navigation_ctaButton__jQlAz {
+          display: block !important;
+          visibility: visible !important;
+          opacity: 1 !important;
         }
-        // Add copyright footer if not already present
-        if (!document.querySelector('footer.copyright-footer')) {
-          var footer = document.createElement('footer');
-          footer.className = 'copyright-footer';
-          footer.style.cssText = 'padding:3rem 2rem 2rem;text-align:center;color:#aaa;border-top:1px solid rgba(0,217,163,0.2);margin-top:0;background:#0a0a0a;';
-          footer.innerHTML = '<p style="margin:0;font-size:0.9rem;color:#aaa;">© 2025 RetailerBoost. All rights reserved.</p>';
-          document.body.appendChild(footer);
+        .nav-cta-group {
+          flex-direction: column;
+          gap: 0.5rem !important;
         }
-      }, 500);
-    });
-    // Also check after a delay for React hydration
-    setTimeout(function() {
-      var alertText = document.querySelector('.AlphaAlert_alertText__szN_k');
-      if (alertText && alertText.textContent.includes('Alpha is')) {
-        alertText.textContent = 'Now open for Shopify merchants in the USA';
+        .nav-cta-secondary {
+          font-size: 0.85rem !important;
+          padding: 0.5rem 1rem !important;
+        }
       }
-      // Add copyright footer if not already present
-      if (!document.querySelector('footer.copyright-footer')) {
-        var footer = document.createElement('footer');
-        footer.className = 'copyright-footer';
-        footer.style.cssText = 'padding:3rem 2rem 2rem;text-align:center;color:#aaa;border-top:1px solid rgba(0,217,163,0.2);margin-top:0;background:#0a0a0a;';
-        footer.innerHTML = '<p style="margin:0;font-size:0.9rem;color:#aaa;">© 2025 RetailerBoost. All rights reserved.</p>';
-        document.body.appendChild(footer);
+      /* FAQ expand/collapse */
+      .faq-item { border-bottom: 1px solid rgba(255,255,255,0.1); }
+      .faq-question { 
+        width: 100%; 
+        background: none; 
+        border: none; 
+        padding: 1.5rem 0; 
+        cursor: pointer; 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center;
+        text-align: left;
       }
-    }, 1500);
-  </script>
-</head>
+      .faq-question h4 { 
+        font-size: 1.15rem; 
+        font-weight: 600; 
+        color: #fff; 
+        margin: 0; 
+      }
+      .faq-icon { 
+        color: #00d9a3; 
+        font-size: 1.5rem; 
+        font-weight: 300;
+        transition: transform 0.3s ease;
+      }
+      .faq-answer { 
+        max-height: 0; 
+        overflow: hidden; 
+        transition: max-height 0.3s ease, padding 0.3s ease;
+        padding: 0;
+      }
+      .faq-answer.open { 
+        max-height: 500px; 
+        padding-bottom: 1.5rem;
+      }
+      .faq-answer p { 
+        color: #cccccc; 
+        line-height: 1.7; 
+        font-size: 1rem; 
+        margin: 0;
+      }
+      .faq-question.open .faq-icon {
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
   <body>
-    <div hidden=""><!--$--><!--/$--></div>
-      <nav class="Navigation_nav__PiYhp">
-        <div class="Navigation_container__PSkJX">
-          <a class="Navigation_logo__rl5XE" href="/"><img alt="RetailerBoost" width="180" height="40" decoding="async" data-nimg="1" style="color:transparent" src="/assets/images/RetailerBoost-Logo-Green-White.png"/></a>
+    <nav class="Navigation_nav__PiYhp">
+      <div class="Navigation_container__PSkJX">
+        <a class="Navigation_logo__rl5XE" href="/"><img alt="RetailerBoost" width="180" height="40" decoding="async" data-nimg="1" style="color:transparent" src="/assets/images/RetailerBoost-Logo-Green-White.png"/></a>
+        <div class="nav-cta-group" style="display:flex;gap:1rem;align-items:center;">
+          <a href="https://app.retailerboost.com?utm_source=retailerboostplatform-com&amp;utm_medium=website&amp;utm_campaign=nav" target="_blank" rel="noopener noreferrer" class="nav-cta-secondary" style="display:inline-block;padding:0.6rem 1.25rem;background:transparent;color:#00d9a3;text-decoration:none;font-weight:600;font-size:0.95rem;border:2px solid #00d9a3;border-radius:8px;transition:all .3s ease;">Get Started</a>
+          <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/sturrock/intro'});return false;" class="Navigation_ctaButton__jQlAz">Book a Call</a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <!-- Hero Section -->
+      <section class="Hero_hero__JT9C7">
+        <div class="Hero_container__Wap54">
+          <div class="Hero_content___NoHb">
+            <div class="AlphaAlert_alertWrapper__SFrca">
+              <a href="https://app.retailerboost.com?utm_source=retailerboostplatform-com&amp;utm_medium=website&amp;utm_campaign=alert" target="_blank" rel="noopener noreferrer nofollow noindex" class="AlphaAlert_alertBox__C_8HX"><span class="AlphaAlert_flag__06Hh7">🇺🇸</span><span class="AlphaAlert_alertText__szN_k">Now open for Shopify merchants in the USA</span><span class="AlphaAlert_alertArrow__KWgoU">→</span></a>
+            </div>
 
-          <a href="https://app.retailerboost.com?utm_source=retailerboostplatform-com&amp;utm_medium=website&amp;utm_campaign=sticky-nav" target="_blank" rel="noopener noreferrer nofollow noindex" class="Navigation_ctaButton__jQlAz">Get Started</a>
+            <h1 class="Hero_headline__ASVgO">We Sell the Products<br/><span class="Hero_highlight__TtPR5">Google Is Currently Ignoring</span></h1>
+
+            <p class="Hero_subheadline__omnUM" style="font-size:1.4rem;font-weight:600;margin-bottom:0.5rem;">Fully Funded. 100% Incremental.</p>
+            <p class="Hero_subheadline__omnUM" style="font-size:1.1rem;opacity:0.9;">Works alongside your agency or team</p>
+
+            <div class="Hero_ctaGroup__BKron">
+              <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/sturrock/intro'});return false;" class="Hero_ctaPrimary____c6c">Book a Call</a>
+              <a href="https://app.retailerboost.com?utm_source=retailerboostplatform-com&amp;utm_medium=website&amp;utm_campaign=hero-cta" target="_blank" rel="noopener noreferrer" class="Hero_ctaSecondary__HYWmu">Get Started</a>
+            </div>
+
+            <div class="Hero_socialProof__yuByx">
+              <p class="Hero_socialProofText___wM8K">Trusted by retailers generating $1.5 Billion+ annually on Google Shopping</p>
+              <div class="Hero_logoGrid__N1_yC">
+                <div class="Hero_logoItem__wgk3m"><img alt="Boohoo" loading="lazy" width="120" height="30" decoding="async" data-nimg="1" style="color:transparent" src="/assets/images/boohoo.svg"/></div>
+                <div class="Hero_logoItem__wgk3m"><img alt="Disney" loading="lazy" width="100" height="30" decoding="async" data-nimg="1" style="color:transparent" src="/assets/images/disney.svg"/></div>
+                <div class="Hero_logoItem__wgk3m"><img alt="eBay" loading="lazy" width="80" height="30" decoding="async" data-nimg="1" style="color:transparent" src="/assets/images/ebay.svg"/></div>
+                <div class="Hero_logoItem__wgk3m"><img alt="LEGO" loading="lazy" width="90" height="30" decoding="async" data-nimg="1" style="color:transparent" src="/assets/images/lego.svg"/></div>
+                <div class="Hero_logoItem__wgk3m"><img alt="Nintendo" loading="lazy" width="120" height="30" decoding="async" data-nimg="1" style="color:transparent" src="/assets/images/nintendo.svg"/></div>
+              </div>
+            </div>
           </div>
-        </nav>
-        <main>
-          <section class="Hero_hero__JT9C7">
-            <div class="Hero_container__Wap54">
-              <div class="Hero_content___NoHb">
-                <div class="AlphaAlert_alertWrapper__SFrca">
-                  <a href="https://app.retailerboost.com?utm_source=retailerboostplatform-com&amp;utm_medium=website&amp;utm_campaign=alpha-banner" target="_blank" rel="noopener noreferrer nofollow noindex" class="AlphaAlert_alertBox__C_8HX"><span class="AlphaAlert_flag__06Hh7">🇺🇸</span><span class="AlphaAlert_alertText__szN_k">Now open for Shopify merchants in the USA</span><span class="AlphaAlert_alertArrow__KWgoU">→</span></a>
+        </div>
+        <div class="Hero_gradient__onPwm"></div>
+      </section>
+
+      <!-- Featured Testimonial - MenFirst -->
+      <div class="Testimonials_testimonialsContainer__F_5v0" style="padding:4rem 2rem;">
+        <div class="Testimonials_testimonialCard__btAPH" style="max-width:900px;margin:0 auto;padding:3rem;">
+          <div class="Testimonials_rating__xBVqX"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
+          <blockquote class="Testimonials_quote__03kBn" style="font-size:1.25rem;line-height:1.8;">"The pay-on-results model is genius. I was skeptical at first - how could someone else fund our advertising? But it works exactly as promised. We got sales from day one, the dashboard shows me everything I need to know, and I love that we only pay after we've already made the sale. It's freed up so much cash flow that I can now invest in other areas of the business. The 27.5% order uplift in our first week alone made this a no-brainer decision."</blockquote>
+          <div class="Testimonials_author__7tVDE" style="margin-top:1.5rem;">
+            <div class="Testimonials_authorName__eBMNk" style="font-size:1.1rem;">Bea</div>
+            <div class="Testimonials_authorTitle__CPvjE">Founder</div>
+            <div class="Testimonials_authorCompany__Kfpma">MenFirst</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Works Alongside Any Setup -->
+      <section style="padding:4rem 2rem;background:linear-gradient(135deg, rgba(0, 217, 163, .03), rgba(10, 10, 10, .6));">
+        <div style="max-width:1200px;margin:0 auto;">
+          <h2 style="font-size:2.25rem;font-weight:700;color:#fff;margin-bottom:1rem;text-align:center;">Works Alongside Any Setup</h2>
+          <p style="text-align:center;font-size:1.1rem;color:#e5e5e5;margin-bottom:3rem;">Whether you have a team, an agency, or run ads yourself</p>
+          
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:1.5rem;margin-bottom:2.5rem;">
+            <div style="background:rgba(0,217,163,0.05);border:1px solid rgba(0,217,163,0.2);border-radius:16px;padding:2rem;text-align:center;">
+              <div style="font-size:2.5rem;margin-bottom:1rem;">👥</div>
+              <h3 style="color:#00d9a3;font-size:1.25rem;font-weight:700;margin-bottom:0.75rem;">In-House PPC Team?</h3>
+              <p style="color:#e5e5e5;line-height:1.6;font-size:1rem;">Let them focus on your winners while we surface what Google's algorithm buries.</p>
+            </div>
+            
+            <div style="background:rgba(0,217,163,0.05);border:1px solid rgba(0,217,163,0.2);border-radius:16px;padding:2rem;text-align:center;">
+              <div style="font-size:2.5rem;margin-bottom:1rem;">🏢</div>
+              <h3 style="color:#00d9a3;font-size:1.25rem;font-weight:700;margin-bottom:0.75rem;">Working With an Agency?</h3>
+              <p style="color:#e5e5e5;line-height:1.6;font-size:1rem;">We complement agency work perfectly. They keep their account, their strategy, their results.</p>
+            </div>
+            
+            <div style="background:rgba(0,217,163,0.05);border:1px solid rgba(0,217,163,0.2);border-radius:16px;padding:2rem;text-align:center;">
+              <div style="font-size:2.5rem;margin-bottom:1rem;">🚀</div>
+              <h3 style="color:#00d9a3;font-size:1.25rem;font-weight:700;margin-bottom:0.75rem;">Running Campaigns Yourself?</h3>
+              <p style="color:#e5e5e5;line-height:1.6;font-size:1rem;">No bandwidth to fight Google's algorithm on every SKU? We'll do it for you, on our dime.</p>
+            </div>
+          </div>
+          
+          <p style="text-align:center;color:#aaa;font-size:0.95rem;margin-bottom:2rem;"><strong style="color:#fff;">Requirements:</strong> Active Google Merchant Centre account in good standing with product feed properly linked. Your existing campaigns stay completely untouched.</p>
+          
+          <div style="display:flex;gap:1rem;justify-content:center;align-items:center;flex-wrap:wrap;">
+            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/sturrock/intro'});return false;" style="display:inline-block;padding:1rem 2.5rem;background:linear-gradient(135deg, #00d9a3, #00b386);color:#000;text-decoration:none;font-size:1.1rem;font-weight:700;border-radius:8px;transition:all .3s ease;">Book a Call</a>
+            <a href="https://app.retailerboost.com?utm_source=retailerboostplatform-com&amp;utm_medium=website&amp;utm_campaign=works-alongside" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:1rem 2.5rem;background:transparent;color:#00d9a3;text-decoration:none;font-size:1.1rem;font-weight:700;border-radius:8px;border:2px solid #00d9a3;transition:all .3s ease;">Get Started</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cannibalization Section -->
+      <section class="HowItWorks_section___YmGt">
+        <div class="HowItWorks_container__z03jw">
+          <div class="HowItWorks_catchSection__xoCw0">
+            <h3 class="HowItWorks_catchHeading__qVNEj">What about cannibalization?</h3>
+            <p class="HowItWorks_catchIntro___pK7u">This is the #1 question from retailers with existing campaigns.</p>
+            <p class="HowItWorks_catchDisclaimer__oxCJQ">We only target products Google's algorithm isn't showing. Zero overlap.</p>
+            <p class="HowItWorks_catchExplanation__IIywy">Your performing products stay completely untouched. You tell us which products to exclude through categories or tags in your Merchant Center, and we only target the rest. Every sale we generate is revenue you weren't getting before.</p>
+
+            <h4 class="HowItWorks_outcomesHeading__ukZZl">Why Retailers Choose Incremental:</h4>
+
+            <div class="HowItWorks_outcomesGrid__TP9lR">
+              <div class="HowItWorks_outcomeCard__eOwny">
+                <div class="HowItWorks_outcomeIcon__V0MQY">🎯</div>
+                <h5 class="HowItWorks_outcomeTitle__Q1E6a">Zero Cannibalization</h5>
+                <p class="HowItWorks_outcomeRate__DDyVD">You're in control</p>
+                <p class="HowItWorks_outcomeDescription__3E_nv">We only touch products Google isn't showing. Your existing campaigns keep every sale they're generating.</p>
+                <p class="HowItWorks_outcomeDetail__3q58Z">You control which products we target through your Merchant Center categories or tags.</p>
+              </div>
+
+              <div class="HowItWorks_outcomeCard__eOwny">
+                <div class="HowItWorks_outcomeIcon__V0MQY">🤝</div>
+                <h5 class="HowItWorks_outcomeTitle__Q1E6a">Works With Anyone</h5>
+                <p class="HowItWorks_outcomeRate__DDyVD">Agency or in-house</p>
+                <p class="HowItWorks_outcomeDescription__3E_nv">Already have a PPC team or agency? We run in parallel, focusing on inventory Google buries.</p>
+                <p class="HowItWorks_outcomeDetail__3q58Z">No conflicts. Just pure upside from products sitting idle.</p>
+              </div>
+
+              <div class="HowItWorks_outcomeCard__eOwny">
+                <div class="HowItWorks_outcomeIcon__V0MQY">💰</div>
+                <h5 class="HowItWorks_outcomeTitle__Q1E6a">We Fund 100%</h5>
+                <p class="HowItWorks_outcomeRate__DDyVD">Zero fixed costs</p>
+                <p class="HowItWorks_outcomeDescription__3E_nv">We invest our own capital to unlock your buried inventory. You only pay commission when we generate sales.</p>
+                <p class="HowItWorks_outcomeDetail__3q58Z">If we don't make sales, you don't pay a cent. 100% aligned.</p>
+              </div>
+
+              <div class="HowItWorks_outcomeCard__eOwny">
+                <div class="HowItWorks_outcomeIcon__V0MQY">📈</div>
+                <h5 class="HowItWorks_outcomeTitle__Q1E6a">Elastic Scale</h5>
+                <p class="HowItWorks_outcomeRate__DDyVD">Pause or scale anytime</p>
+                <p class="HowItWorks_outcomeDescription__3E_nv">More orders from products you already stock. No fixed contract. No retainers.</p>
+                <p class="HowItWorks_outcomeDetail__3q58Z">Pause or scale anytime. Full control, zero lock-in.</p>
+              </div>
+            </div>
+
+            <p class="HowItWorks_catchFooter__BjZ0u">You're paying to warehouse products that Google won't show. We turn that dead inventory into sales - at our expense.</p>
+            <p class="HowItWorks_catchCta__8R46h"><strong>Most of your products get zero Shopping impressions.</strong><br/> We turn them into sales at our expense. You pay commission only on the extra orders.</p>
+          </div>
+
+          <!-- FAQ Section (Expandable) -->
+          <div id="faq" style="background:linear-gradient(135deg, rgba(0, 217, 163, .03), rgba(10, 10, 10, .6));border:1px solid rgba(0, 217, 163, .2);border-radius:20px;padding:3rem;margin-bottom:4rem;">
+            <h3 style="font-size:2rem;font-weight:700;color:#fff;margin-bottom:1rem;text-align:center;">Frequently Asked Questions</h3>
+            <p style="text-align:center;font-size:1.1rem;color:#e5e5e5;margin-bottom:2.5rem;">Common questions from merchants considering RetailerBoost</p>
+            
+            <div style="max-width:900px;margin:0 auto;">
+              <div class="faq-item">
+                <button class="faq-question" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
+                  <h4>Who owns the ad account, product feed, and tracking data?</h4>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>We own and manage the Google Ads account. This keeps your existing ad account clean if you want to run your own campaigns. You keep full ownership of your product feed and Google Merchant Center. Our <a href="https://app.retailerboost.com/js/retailerboost.min.js?store=YOUR_STORE_ID" target="_blank" rel="noopener noreferrer" style="color:#00d9a3;text-decoration:none;">tracking script</a> simply stores customer journey data in local storage and sends conversion events to our backend for attribution.</p>
+                </div>
+              </div>
+              
+              <div class="faq-item">
+                <button class="faq-question" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
+                  <h4>Can I see the Google Shopping performance data?</h4>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>We provide our own dashboard showing all attributed orders with full customer journey paths, ad clicks, and conversion data - presented in commission rate terms so you can see exactly what you're paying and earning. We operate as an affiliate with Google Shopping ads, reporting commission revenue rather than merchant order values. This means our Google Ads account runs tight CPC caps where we may only make a few cents profit per sale. To a PPC expert, the Google Ads account looks like it's underperforming, but this is intentional. It's part of our strategy to unlock cheaper clicks and prevent Google algorithms from swinging wildly with bid inflations that lower ROAS.</p>
+                </div>
+              </div>
+              
+              <div class="faq-item">
+                <button class="faq-question" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
+                  <h4>Do you have live store examples?</h4>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>Yes! We're currently running live ads for multiple US Shopify merchants. We're happy to connect you with existing customers who can share their experience firsthand. Book a call and we'll make introductions.</p>
+                </div>
+              </div>
+              
+              <div class="faq-item">
+                <button class="faq-question" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
+                  <h4>What is the commission rate and contract terms?</h4>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>We start at 12% of order subtotal (excluding taxes, discounts, and shipping), using last non-direct click attribution with a 30-day window. No fixed contract, you can cancel anytime. We can also discuss a different commission rate if needed, though if it goes too low the model stops working as we can no longer break even on ad spend.</p>
+                </div>
+              </div>
+              
+              <div class="faq-item">
+                <button class="faq-question" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
+                  <h4>Are commissions refunded if a customer returns an order?</h4>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>No. Commission is based on the initial purchase value because we front the advertising cost that generated the sale, and Google doesn't refund those costs either. That said, we understand there are occasionally exceptional circumstances, and we're happy to review requests on a case-by-case basis.</p>
+                </div>
+              </div>
+              
+              <div class="faq-item">
+                <button class="faq-question" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
+                  <h4>Can I run my own Google Ads alongside RetailerBoost?</h4>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>Absolutely. RetailerBoost is designed to run alongside your existing campaigns, whether you manage them yourself or have an agency. We use last non-direct click attribution, so you only pay commission when RetailerBoost was the final paid click. If a customer clicks your own ad last, you don't pay us. This ensures you never pay twice for the same order.</p>
+                </div>
+              </div>
+              
+              <div class="faq-item">
+                <button class="faq-question" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
+                  <h4>Can I choose which products you advertise?</h4>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>Yes. You can run your full product catalog, or just give us products that you can't make perform yourself and we'll try them out. You control what appears in your Merchant Center feed, and we can target specific product groups based on your preferences.</p>
+                </div>
+              </div>
+              
+              <div class="faq-item">
+                <button class="faq-question" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
+                  <h4>Do you bid on my brand keywords?</h4>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>No, we don't brand bid. Just set your brand terms as negative keywords and we'll pass them through to our Google Ads account. This ensures we only target generic shopping queries and never compete with your branded traffic.</p>
+                </div>
+              </div>
+              
+              <div class="faq-item" style="border-bottom:none;">
+                <button class="faq-question" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
+                  <h4>How can I verify your tracking is accurate?</h4>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>You can inspect our <a href="https://app.retailerboost.com/js/retailerboost.min.js?store=YOUR_STORE_ID" target="_blank" rel="noopener noreferrer" style="color:#00d9a3;text-decoration:none;">attribution script</a> directly - feel free to paste it into ChatGPT to see exactly what it does. Many merchants also run third-party attribution tools alongside ours to compare data collection. We encourage this so you can verify our tracking against your own tools and explore different attribution models.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Comparison Table -->
+      <div class="ComparisonTable_comparisonContainer__IX5BW">
+        <h2 class="ComparisonTable_comparisonHeading___rT5m">Incremental Sales vs. Traditional Google Ads</h2>
+        <p class="ComparisonTable_comparisonIntro__EZ_dw">See how our incremental sales model compares to running your own campaigns. We focus on the products Google ignores, so you get pure upside with zero overlap.</p>
+
+        <div class="ComparisonTable_comparisonTable__0FA1m">
+          <div class="ComparisonTable_comparisonRow___aClD">
+            <div class="ComparisonTable_featureCell__lVRmV"></div>
+            <div class="ComparisonTable_headerCell__nOvxt">
+              <div class="ComparisonTable_headerTitle__Y_oLB">RetailerBoost</div>
+            </div>
+            <div class="ComparisonTable_headerCell__nOvxt">
+              <div class="ComparisonTable_headerTitle__Y_oLB">Your Own Google Ads</div>
+            </div>
+          </div>
+
+          <div class="ComparisonTable_comparisonRow___aClD">
+            <div class="ComparisonTable_featureCell__lVRmV"><strong>Cannibalization Risk</strong></div>
+            <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_checkmark__Q7pX2">✓</span> Zero overlap</div>
+            <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_cross__O5Ln9">✗</span> Compete with your own products</div>
+          </div>
+
+          <div class="ComparisonTable_comparisonRow___aClD">
+            <div class="ComparisonTable_featureCell__lVRmV"><strong>Sales Type</strong></div>
+            <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_checkmark__Q7pX2">✓</span> 100% incremental revenue</div>
+            <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_cross__O5Ln9">✗</span> Mix of new and existing traffic</div>
+          </div>
+
+          <div class="ComparisonTable_comparisonRow___aClD">
+            <div class="ComparisonTable_featureCell__lVRmV"><strong>Products Targeted</strong></div>
+            <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_checkmark__Q7pX2">✓</span> Only your buried inventory</div>
+            <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_cross__O5Ln9">✗</span> Your full catalog (or manual selection)</div>
+          </div>
+
+          <div class="ComparisonTable_comparisonRow___aClD">
+            <div class="ComparisonTable_featureCell__lVRmV"><strong>Pricing Model</strong></div>
+            <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_checkmark__Q7pX2">✓</span> Pay only when we generate sales</div>
+            <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_cross__O5Ln9">✗</span> Pay per click regardless of sales</div>
+          </div>
+
+          <div class="ComparisonTable_comparisonRow___aClD">
+            <div class="ComparisonTable_featureCell__lVRmV"><strong>Ad Budget</strong></div>
+            <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_checkmark__Q7pX2">✓</span> We fund 100%</div>
+            <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_cross__O5Ln9">✗</span> You fund campaigns</div>
+          </div>
+
+          <div class="ComparisonTable_comparisonRow___aClD">
+            <div class="ComparisonTable_featureCell__lVRmV"><strong>ROI Predictability</strong></div>
+            <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_checkmark__Q7pX2">✓</span> Fixed commission = locked-in ROI</div>
+            <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_cross__O5Ln9">✗</span> Variable ROI, unpredictable results</div>
+          </div>
+
+          <div class="ComparisonTable_comparisonRow___aClD">
+            <div class="ComparisonTable_featureCell__lVRmV"><strong>Works With Agencies</strong></div>
+            <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_checkmark__Q7pX2">✓</span> Runs in parallel, no conflicts</div>
+            <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_cross__O5Ln9">✗</span> Often overlaps with agency work</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Problem Block -->
+      <section style="padding:5rem 2rem;background:linear-gradient(135deg, rgba(0, 217, 163, .05), rgba(10, 10, 10, .8));">
+        <div style="max-width:900px;margin:0 auto;text-align:center;">
+          <h2 style="font-size:2.5rem;font-weight:700;color:#fff;margin-bottom:1.5rem;line-height:1.2;">40% of Your Products Are<br/><span style="color:#00d9a3;">Invisible in Shopping</span></h2>
+          <p style="font-size:1.2rem;color:#e5e5e5;line-height:1.8;margin-bottom:1rem;">Google's algorithm buries 40-60% of most catalogs. Zero impressions. Zero sales.</p>
+          <p style="font-size:1.2rem;color:#e5e5e5;line-height:1.8;margin-bottom:1rem;">We unlock that buried inventory and turn it into revenue.</p>
+          <p style="font-size:1.2rem;color:#e5e5e5;line-height:1.8;margin-bottom:2.5rem;">We fund 100% of ad spend. You only pay a pre-agreed fixed commission on the extra orders.</p>
+          <div style="display:flex;gap:1rem;justify-content:center;align-items:center;flex-wrap:wrap;">
+            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/sturrock/intro'});return false;" style="display:inline-block;padding:1.25rem 3rem;background:linear-gradient(135deg, #00d9a3, #00b386);color:#000;text-decoration:none;font-size:1.125rem;font-weight:700;border-radius:12px;transition:all .3s ease;">Book a Call</a>
+            <a href="https://app.retailerboost.com?utm_source=retailerboostplatform-com&amp;utm_medium=website&amp;utm_campaign=problem-block" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:1.25rem 3rem;background:transparent;color:#00d9a3;text-decoration:none;font-size:1.125rem;font-weight:700;border-radius:12px;border:2px solid #00d9a3;transition:all .3s ease;">Get Started</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works Section -->
+      <section id="how-it-works" class="HowItWorks_section___YmGt">
+        <div class="HowItWorks_container__z03jw">
+          <h2 class="HowItWorks_heading__Cf95L">How Incremental Sales Works</h2>
+          <p class="HowItWorks_subheading__8KKk1">A hands-off solution that runs alongside your existing campaigns</p>
+
+          <div class="HowItWorks_columnsContainer__e0uHU">
+            <div class="HowItWorks_column__mRBWN">
+              <h3 class="HowItWorks_columnHeading__QMyB9">What You Do</h3>
+              <div class="HowItWorks_stepsList__KoZ7H">
+                <div class="HowItWorks_stepItem__VbbeH">
+                  <div class="HowItWorks_stepNumber__0BHvS">1</div>
+                  <div class="HowItWorks_stepContent__ukcTL">
+                    <h4 class="HowItWorks_stepTitle__uo2fo">Connect Your Store</h4>
+                    <p class="HowItWorks_stepDescription__qvgax">Link your Google Merchant Center so we can access your product feed.</p>
                   </div>
-
-                  <h1 class="Hero_headline__ASVgO">Get Incremental Orders <br/>on Google Ads <br/><span class="Hero_highlight__TtPR5"> Pay Only for Results</span></h1>
-
-                  <p class="Hero_subheadline__omnUM">Commission-based Google Shopping Ads for merchants &amp; retailers.<br/> We setup, manage, and fund Google Ads campaigns.<br/> You only pay for sales generated.</p>
-
-                  <div class="Hero_ctaGroup__BKron">
-                    <a href="https://app.retailerboost.com?utm_source=retailerboostplatform-com&amp;utm_medium=website&amp;utm_campaign=hero-cta" target="_blank" rel="noopener noreferrer nofollow noindex" class="Hero_ctaPrimary____c6c">Get Started Free</a>
-
-                      <a href="#how-it-works" class="Hero_ctaSecondary__HYWmu">Learn How It Works</a>
-                      </div>
-
-                      <div class="Hero_socialProof__yuByx">
-                        <p class="Hero_socialProofText___wM8K">From the team that generated $1.5 Billion in 2024 for the worlds biggest brands</p>
-
-                          <div class="Hero_logoGrid__N1_yC">
-                            <div class="Hero_logoItem__wgk3m"><img alt="Boohoo" loading="lazy" width="120" height="30" decoding="async" data-nimg="1" style="color:transparent" src="/assets/images/boohoo.svg"/></div>
-
-                            <div class="Hero_logoItem__wgk3m"><img alt="Disney" loading="lazy" width="100" height="30" decoding="async" data-nimg="1" style="color:transparent" src="/assets/images/disney.svg"/></div>
-
-                            <div class="Hero_logoItem__wgk3m"><img alt="eBay" loading="lazy" width="80" height="30" decoding="async" data-nimg="1" style="color:transparent" src="/assets/images/ebay.svg"/></div>
-
-                            <div class="Hero_logoItem__wgk3m"><img alt="LEGO" loading="lazy" width="90" height="30" decoding="async" data-nimg="1" style="color:transparent" src="/assets/images/lego.svg"/></div>
-
-                            <div class="Hero_logoItem__wgk3m"><img alt="Nintendo" loading="lazy" width="120" height="30" decoding="async" data-nimg="1" style="color:transparent" src="/assets/images/nintendo.svg"/></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="Hero_gradient__onPwm"></div>
-                    </section>
-                    <section id="how-it-works" class="HowItWorks_section___YmGt">
-                      <div class="HowItWorks_container__z03jw">
-                        <h2 class="HowItWorks_heading__Cf95L">How It Works</h2>
-
-                          <p class="HowItWorks_subheading__8KKk1">A simple process that delivers results</p>
-
-                            <div class="HowItWorks_columnsContainer__e0uHU">
-                              <div class="HowItWorks_column__mRBWN">
-                                <h3 class="HowItWorks_columnHeading__QMyB9">What You Do</h3>
-
-                                  <div class="HowItWorks_stepsList__KoZ7H">
-                                    <div class="HowItWorks_stepItem__VbbeH">
-                                      <div class="HowItWorks_stepNumber__0BHvS">1</div>
-
-                                        <div class="HowItWorks_stepContent__ukcTL">
-                                          <h4 class="HowItWorks_stepTitle__uo2fo">Sign Up &amp; Verify Email</h4>
-
-                                            <p class="HowItWorks_stepDescription__qvgax">Create your account and verify your email address to get started.</p>
-                                            </div>
-                                          </div>
-
-                                          <div class="HowItWorks_stepItem__VbbeH">
-                                            <div class="HowItWorks_stepNumber__0BHvS">2</div>
-
-                                              <div class="HowItWorks_stepContent__ukcTL">
-                                                <h4 class="HowItWorks_stepTitle__uo2fo">Add Your Store</h4>
-
-                                                  <p class="HowItWorks_stepDescription__qvgax">Connect your eCommerce store to our platform securely.</p>
-                                                  </div>
-                                                </div>
-
-                                                <div class="HowItWorks_stepItem__VbbeH">
-                                                  <div class="HowItWorks_stepNumber__0BHvS">3</div>
-
-                                                    <div class="HowItWorks_stepContent__ukcTL">
-                                                      <h4 class="HowItWorks_stepTitle__uo2fo">Install Attribution Tracking</h4>
-
-                                                        <p class="HowItWorks_stepDescription__qvgax">Add our tracking script to monitor customer journeys and conversions.</p>
-                                                        </div>
-                                                      </div>
-
-                                                      <div class="HowItWorks_stepItem__VbbeH">
-                                                        <div class="HowItWorks_stepNumber__0BHvS">4</div>
-
-                                                          <div class="HowItWorks_stepContent__ukcTL">
-                                                            <h4 class="HowItWorks_stepTitle__uo2fo">Connect Google Merchant Centre</h4>
-
-                                                              <p class="HowItWorks_stepDescription__qvgax">Link your Google Merchant Centre account for product listings.</p>
-                                                              </div>
-                                                            </div>
-
-                                                            <div class="HowItWorks_stepItem__VbbeH">
-                                                              <div class="HowItWorks_stepNumber__0BHvS">5</div>
-
-                                                                <div class="HowItWorks_stepContent__ukcTL">
-                                                                  <h4 class="HowItWorks_stepTitle__uo2fo">Sit Back &amp; Relax</h4>
-
-                                                                    <p class="HowItWorks_stepDescription__qvgax">Watch the incremental orders roll in from your new campaigns.</p>
-                                                                    </div>
-                                                                  </div>
-
-                                                                  <div class="HowItWorks_stepItem__VbbeH">
-                                                                    <div class="HowItWorks_stepNumber__0BHvS">6</div>
-
-                                                                      <div class="HowItWorks_stepContent__ukcTL">
-                                                                        <h4 class="HowItWorks_stepTitle__uo2fo">Pay Only for Results</h4>
-
-                                                                          <p class="HowItWorks_stepDescription__qvgax">Only pay a fixed percentage on orders we generate for you.</p>
-                                                                          </div>
-                                                                        </div>
-                                                                      </div>
-                                                                    </div>
-
-                                                                    <div class="HowItWorks_column__mRBWN">
-                                                                      <h3 class="HowItWorks_columnHeading__QMyB9">What We Do</h3>
-
-                                                                        <div class="HowItWorks_stepsList__KoZ7H">
-                                                                          <div class="HowItWorks_stepItem__VbbeH">
-                                                                            <div class="HowItWorks_stepNumber__0BHvS">1</div>
-
-                                                                              <div class="HowItWorks_stepContent__ukcTL">
-                                                                                <h4 class="HowItWorks_stepTitle__uo2fo">Track Customer Journeys</h4>
-
-                                                                                  <p class="HowItWorks_stepDescription__qvgax">Monitor and analyze customer behavior with our attribution tracking script.</p>
-                                                                                  </div>
-                                                                                </div>
-
-                                                                                <div class="HowItWorks_stepItem__VbbeH">
-                                                                                  <div class="HowItWorks_stepNumber__0BHvS">2</div>
-
-                                                                                    <div class="HowItWorks_stepContent__ukcTL">
-                                                                                      <h4 class="HowItWorks_stepTitle__uo2fo">Setup Additional Ad Account</h4>
-
-                                                                                        <p class="HowItWorks_stepDescription__qvgax">Create a dedicated Google Ads account for incremental campaign testing.</p>
-                                                                                        </div>
-                                                                                      </div>
-
-                                                                                      <div class="HowItWorks_stepItem__VbbeH">
-                                                                                        <div class="HowItWorks_stepNumber__0BHvS">3</div>
-
-                                                                                          <div class="HowItWorks_stepContent__ukcTL">
-                                                                                            <h4 class="HowItWorks_stepTitle__uo2fo">Fund Your Campaigns</h4>
-
-                                                                                              <p class="HowItWorks_stepDescription__qvgax">We run and fully fund your Google Ads campaigns - zero upfront cost.</p>
-                                                                                              </div>
-                                                                                            </div>
-
-                                                                                            <div class="HowItWorks_stepItem__VbbeH">
-                                                                                              <div class="HowItWorks_stepNumber__0BHvS">4</div>
-
-                                                                                                <div class="HowItWorks_stepContent__ukcTL">
-                                                                                                  <h4 class="HowItWorks_stepTitle__uo2fo">Optimize for Results</h4>
-
-                                                                                                    <p class="HowItWorks_stepDescription__qvgax">Continuously optimize to break even between ad spend and commission.</p>
-                                                                                                    </div>
-                                                                                                  </div>
-
-                                                                                                  <div class="HowItWorks_stepItem__VbbeH">
-                                                                                                    <div class="HowItWorks_stepNumber__0BHvS">5</div>
-
-                                                                                                      <div class="HowItWorks_stepContent__ukcTL">
-                                                                                                        <h4 class="HowItWorks_stepTitle__uo2fo">Charge Only for Sales</h4>
-
-                                                                                                          <p class="HowItWorks_stepDescription__qvgax">You only pay when we generate actual sales - no sales, no fees.</p>
-                                                                                                          </div>
-                                                                                                        </div>
-
-                                                                                                        <div class="HowItWorks_stepItem__VbbeH">
-                                                                                                          <div class="HowItWorks_stepNumber__0BHvS">6</div>
-
-                                                                                                            <div class="HowItWorks_stepContent__ukcTL">
-                                                                                                              <h4 class="HowItWorks_stepTitle__uo2fo">Provide Dashboard Reporting</h4>
-
-                                                                                                                <p class="HowItWorks_stepDescription__qvgax">Access real-time analytics and performance insights through your dashboard.</p>
-                                                                                                                </div>
-                                                                                                              </div>
-                                                                                                            </div>
-                                                                                                          </div>
-                                                                                                        </div>
-
-                                                                                                        <div class="HowItWorks_prerequisites__0QKmv">
-                                                                                                          <h3 class="HowItWorks_prerequisitesHeading__dnp5o">Eligibility &amp; Prerequisites</h3>
-
-                                                                                                            <div class="HowItWorks_prerequisitesContent__ljCR_">
-                                                                                                              <p class="HowItWorks_prerequisitesText__7vL3j">To get started with RetailerBoost, you need to have your <strong>Google Merchant Centre</strong> setup and configured with your product feed properly linked. Your Merchant Centre account must be in good standing and not suspended. Your store must also meet our<!-- --> <button class="HowItWorks_criteriaLink__bLitP">investment criteria</button>.</p>
-
-                                                                                                                <p class="HowItWorks_prerequisitesNote__V111N"><strong>Note:</strong> RetailerBoost currently does not offer Google Merchant Centre setup or product feed syncs. We may offer this service in the future to help merchants onboard to Google Ads more easily.</p>
-
-                                                                                                                  <p class="HowItWorks_shopifyAppLink__nE_TV">Shopify merchants can use the<!-- -->
-                                                                                                                    <a href="https://apps.shopify.com/google" target="_blank" rel="noopener noreferrer" class="HowItWorks_inlineLink__kc_kP">official Google &amp; YouTube app</a>
-                                                                                                                      <!-- -->to set up and sync your Google Merchant Centre account.</p>
-                                                                                                                    </div>
-                                                                                                                  </div>
-
-                                                                                                                  <div class="HowItWorks_catchSection__xoCw0">
-                                                                                                                    <h3 class="HowItWorks_catchHeading__qVNEj">This all sounds too good to be true... what&#x27;s the catch?</h3>
-
-                                                                                                                      <p class="HowItWorks_catchIntro___pK7u">Don&#x27;t worry, we get this a lot.</p>
-
-                                                                                                                        <p class="HowItWorks_catchDisclaimer__oxCJQ">We can&#x27;t perform magic or guarantee results.</p>
-
-                                                                                                                          <p class="HowItWorks_catchExplanation__IIywy">Whilst our platform will leverage multiple strategies and methods to promote your products on Google and drive your store orders, our service doesn&#x27;t work for every store.</p>
-
-                                                                                                                            <h4 class="HowItWorks_outcomesHeading__ukZZl">Possible Outcomes:</h4>
-
-                                                                                                                              <div class="HowItWorks_outcomesGrid__TP9lR">
-                                                                                                                                <div class="HowItWorks_outcomeCard__eOwny">
-                                                                                                                                  <div class="HowItWorks_outcomeIcon__V0MQY">🎯</div>
-
-                                                                                                                                    <h5 class="HowItWorks_outcomeTitle__Q1E6a">We both win</h5>
-
-                                                                                                                                      <p class="HowItWorks_outcomeRate__DDyVD">(2 in 5 stores)</p>
-
-                                                                                                                                        <p class="HowItWorks_outcomeDescription__3E_nv">We invest in the ad spend and generate your store orders. We both make money.</p>
-
-                                                                                                                                          <p class="HowItWorks_outcomeDetail__3q58Z">We reinvest the profit we make to drive you more volume and improve our service.</p>
-                                                                                                                                          </div>
-
-                                                                                                                                          <div class="HowItWorks_outcomeCard__eOwny">
-                                                                                                                                            <div class="HowItWorks_outcomeIcon__V0MQY">🙂</div>
-
-                                                                                                                                              <h5 class="HowItWorks_outcomeTitle__Q1E6a">You win, we lose</h5>
-
-                                                                                                                                                <p class="HowItWorks_outcomeRate__DDyVD">(1 in 5 stores)</p>
-
-                                                                                                                                                  <p class="HowItWorks_outcomeDescription__3E_nv">We invest in the ad spend and generate you orders. You make money but we lose money.</p>
-
-                                                                                                                                                    <p class="HowItWorks_outcomeDetail__3q58Z">In these cases we may be able to optimize commission caps and improve conversion rates so we can both win!</p>
-                                                                                                                                                    </div>
-
-                                                                                                                                                    <div class="HowItWorks_outcomeCard__eOwny">
-                                                                                                                                                      <div class="HowItWorks_outcomeIcon__V0MQY">🤷</div>
-
-                                                                                                                                                        <h5 class="HowItWorks_outcomeTitle__Q1E6a">You get no orders, we lose</h5>
-
-                                                                                                                                                          <p class="HowItWorks_outcomeRate__DDyVD">(1 in 5 stores)</p>
-
-                                                                                                                                                            <p class="HowItWorks_outcomeDescription__3E_nv">We invest in the ad spend but the impressions and clicks we generate lead to no orders. We lose money and dial back ad spend investment. You pay nothing.</p>
-
-                                                                                                                                                              <p class="HowItWorks_outcomeDetail__3q58Z">We may decide to run further experiments and invest again in the future.</p>
-                                                                                                                                                              </div>
-
-                                                                                                                                                              <div class="HowItWorks_outcomeCard__eOwny">
-                                                                                                                                                                <div class="HowItWorks_outcomeIcon__V0MQY">🚫</div>
-
-                                                                                                                                                                  <h5 class="HowItWorks_outcomeTitle__Q1E6a">Store is ineligible</h5>
-
-                                                                                                                                                                    <p class="HowItWorks_outcomeRate__DDyVD">(1 in 5 stores)</p>
-
-                                                                                                                                                                      <p class="HowItWorks_outcomeDescription__3E_nv">Your store doesn&#x27;t meet our<!-- --> <button class="HowItWorks_criteriaLink__bLitP">investment criteria</button> <!-- -->and we&#x27;re unable to invest in promoting your products at this time.</p>
-
-                                                                                                                                                                        <p class="HowItWorks_outcomeDetail__3q58Z">We&#x27;ll let you know what&#x27;s needed so you can make the necessary changes. Once resolved, we&#x27;ll reassess your store for eligibility.</p>
-                                                                                                                                                                        </div>
-                                                                                                                                                                      </div>
-
-                                                                                                                                                                      <p class="HowItWorks_catchFooter__BjZ0u">Many factors outside of our control can affect our service&#x27;s performance. This includes the types of products you sell, the demand and search volume, price competitiveness, customer behaviour, your on-site conversion rate, average basket value, seasonality and more.</p>
-
-                                                                                                                                                                        <p class="HowItWorks_catchCta__8R46h"><strong>You&#x27;ve got nothing to lose to give RetailerBoost a try!</strong><br/> If we don&#x27;t generate orders for your store, you won&#x27;t pay anything!</p>
-                                                                                                                                                                      </div>
-                                                                                                                                                                    </div>
-                                                                                                                                                                  </section>
-                                                                                                                                                                  <div class="ComparisonTable_comparisonContainer__IX5BW">
-                                                                                                                                                                    <h2 class="ComparisonTable_comparisonHeading___rT5m">How Our Google Ads Model Compares</h2>
-
-                                                                                                                                                                      <p class="ComparisonTable_comparisonIntro__EZ_dw">Many of our customers decide to run a multi-layered strategy, running both our service and their own Google ad campaigns. We&#x27;ve put a simple comparison below to highlight the differences.</p>
-
-                                                                                                                                                                        <div class="ComparisonTable_comparisonTable__0FA1m">
-                                                                                                                                                                          <div class="ComparisonTable_comparisonRow___aClD">
-                                                                                                                                                                            <div class="ComparisonTable_featureCell__lVRmV"></div>
-
-                                                                                                                                                                              <div class="ComparisonTable_headerCell__nOvxt">
-                                                                                                                                                                                <div class="ComparisonTable_headerTitle__Y_oLB">RetailerBoost</div>
-                                                                                                                                                                                </div>
-
-                                                                                                                                                                                <div class="ComparisonTable_headerCell__nOvxt">
-                                                                                                                                                                                  <div class="ComparisonTable_headerTitle__Y_oLB">Your Own Google Ad Campaigns</div>
-                                                                                                                                                                                  </div>
-                                                                                                                                                                                </div>
-
-                                                                                                                                                                                <div class="ComparisonTable_comparisonRow___aClD">
-                                                                                                                                                                                  <div class="ComparisonTable_featureCell__lVRmV"><strong>Learning Curve</strong></div>
-
-                                                                                                                                                                                    <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_checkmark__Q7pX2">✓</span> Zero learning curve</div>
-
-                                                                                                                                                                                      <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_cross__O5Ln9">✗</span> Need a Google ads expert</div>
-                                                                                                                                                                                      </div>
-
-                                                                                                                                                                                      <div class="ComparisonTable_comparisonRow___aClD">
-                                                                                                                                                                                        <div class="ComparisonTable_featureCell__lVRmV"><strong>Pricing Model</strong></div>
-
-                                                                                                                                                                                          <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_checkmark__Q7pX2">✓</span> Risk-free CPA model</div>
-
-                                                                                                                                                                                            <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_cross__O5Ln9">✗</span> Risky CPC and CPM model</div>
-                                                                                                                                                                                            </div>
-
-                                                                                                                                                                                            <div class="ComparisonTable_comparisonRow___aClD">
-                                                                                                                                                                                              <div class="ComparisonTable_featureCell__lVRmV"><strong>Error Messages</strong></div>
-
-                                                                                                                                                                                                <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_checkmark__Q7pX2">✓</span> Plain english suggestions</div>
-
-                                                                                                                                                                                                  <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_cross__O5Ln9">✗</span> Obtuse error messages</div>
-                                                                                                                                                                                                  </div>
-
-                                                                                                                                                                                                  <div class="ComparisonTable_comparisonRow___aClD">
-                                                                                                                                                                                                    <div class="ComparisonTable_featureCell__lVRmV"><strong>Setup &amp; Maintenance</strong></div>
-
-                                                                                                                                                                                                      <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_checkmark__Q7pX2">✓</span> Setup in seconds, reviewed and approved in 4-7 days</div>
-
-                                                                                                                                                                                                        <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_cross__O5Ln9">✗</span> Weeks to setup, constant maintenance &amp; headaches</div>
-                                                                                                                                                                                                        </div>
-
-                                                                                                                                                                                                        <div class="ComparisonTable_comparisonRow___aClD">
-                                                                                                                                                                                                          <div class="ComparisonTable_featureCell__lVRmV"><strong>Ad Budget</strong></div>
-
-                                                                                                                                                                                                            <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_checkmark__Q7pX2">✓</span> We fund campaigns</div>
-
-                                                                                                                                                                                                              <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_cross__O5Ln9">✗</span> You fund campaigns</div>
-                                                                                                                                                                                                              </div>
-
-                                                                                                                                                                                                              <div class="ComparisonTable_comparisonRow___aClD">
-                                                                                                                                                                                                                <div class="ComparisonTable_featureCell__lVRmV"><strong>Target ROI</strong></div>
-
-                                                                                                                                                                                                                  <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_checkmark__Q7pX2">✓</span> Fixed commission ensures locked-in ROI</div>
-
-                                                                                                                                                                                                                    <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_cross__O5Ln9">✗</span> Variable ROI, unpredictable results</div>
-                                                                                                                                                                                                                    </div>
-
-                                                                                                                                                                                                                    <div class="ComparisonTable_comparisonRow___aClD">
-                                                                                                                                                                                                                      <div class="ComparisonTable_featureCell__lVRmV"><strong>Tracking Privacy</strong></div>
-
-                                                                                                                                                                                                                        <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_checkmark__Q7pX2">✓</span> Minimal tracking, privacy-first</div>
-
-                                                                                                                                                                                                                          <div class="ComparisonTable_valueCell__PZrPF"><span class="ComparisonTable_cross__O5Ln9">✗</span> Complex tracking requirements</div>
-                                                                                                                                                                                                                          </div>
-                                                                                                                                                                                                                        </div>
-                                                                                                                                                                                                                      </div>
-
-                                                                                                                                                                                                                      <div class="Testimonials_testimonialsContainer__F_5v0">
-                                                                                                                                                                                                                        <div class="Testimonials_testimonialCard__btAPH">
-                                                                                                                                                                                                                          <div class="Testimonials_rating__xBVqX"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
-                                                                                                                                                                                                                            <blockquote class="Testimonials_quote__03kBn">“<!-- -->I have created 73 additional sales so far, every extra helps so I am glad I signed up.<!-- -->”</blockquote>
-                                                                                                                                                                                                                              <div class="Testimonials_author__7tVDE">
-                                                                                                                                                                                                                                <div class="Testimonials_authorName__eBMNk">Adrian Turley</div>
-
-                                                                                                                                                                                                                                  <div class="Testimonials_authorTitle__CPvjE">Managing Director</div>
-
-                                                                                                                                                                                                                                    <div class="Testimonials_authorCompany__Kfpma">LPG Jets</div>
-                                                                                                                                                                                                                                    </div>
-                                                                                                                                                                                                                                  </div>
-
-                                                                                                                                                                                                                                  <div class="Testimonials_controls__zQlnm"><button class="Testimonials_navButton__k0yxy" aria-label="Previous testimonial">←</button><button class="Testimonials_navButton__k0yxy" aria-label="Next testimonial">→</button></div>
-
-                                                                                                                                                                                                                                    <div class="Testimonials_dots__dXeMc"><button class="Testimonials_dot__As_La Testimonials_dotActive__ltxUT" aria-label="Go to testimonial 1"></button><button class="Testimonials_dot__As_La " aria-label="Go to testimonial 2"></button><button class="Testimonials_dot__As_La " aria-label="Go to testimonial 3"></button><button class="Testimonials_dot__As_La " aria-label="Go to testimonial 4"></button><button class="Testimonials_dot__As_La " aria-label="Go to testimonial 5"></button><button class="Testimonials_dot__As_La " aria-label="Go to testimonial 6"></button></div>
-                                                                                                                                                                                                                                    </div>
-                                                                                                                                                                                                                                    <section class="PersonaCards_section__npfcS">
-                                                                                                                                                                                                                                      <div class="PersonaCards_container__rdYMA">
-                                                                                                                                                                                                                                        <h2 class="PersonaCards_heading__MNzfS">Built for Every Business Type</h2>
-
-                                                                                                                                                                                                                                          <p class="PersonaCards_subheading__TG4Ak">Whether you&#x27;re a small merchant, enterprise retailer, or agency,<br/>RetailerBoost has a solution tailored to your needs.</p>
-
-                                                                                                                                                                                                                                          <div class="PersonaCards_cardsGrid__VrgKz">
-                                                                                                                                                                                                                                            <div class="PersonaCards_card__AD_D8">
-                                                                                                                                                                                                                                              <div class="PersonaCards_cardIcon__4cRrB">🏪</div>
-
-                                                                                                                                                                                                                                                <h3 class="PersonaCards_cardTitle__Tyrhz">Small &amp; Medium Businesses</h3>
-
-                                                                                                                                                                                                                                                  <p class="PersonaCards_cardDescription__Lc6uv">No ad budget? No PPC expertise? No problem. We fund everything and you only pay when you make sales.</p>
-
-                                                                                                                                                                                                                                                    <ul class="PersonaCards_highlights__XsC3L">
-                                                                                                                                                                                                                                                      <li class="PersonaCards_highlight__02M9R"><span class="PersonaCards_checkmark__3TYtA">✓</span>Zero upfront costs</li>
-
-                                                                                                                                                                                                                                                        <li class="PersonaCards_highlight__02M9R"><span class="PersonaCards_checkmark__3TYtA">✓</span>No technical knowledge required</li>
-
-                                                                                                                                                                                                                                                          <li class="PersonaCards_highlight__02M9R"><span class="PersonaCards_checkmark__3TYtA">✓</span>Simple 12% commission</li>
-                                                                                                                                                                                                                                                          </ul>
-                                                                                                                                                                                                                                                        </div>
-
-                                                                                                                                                                                                                                                        <div class="PersonaCards_card__AD_D8">
-                                                                                                                                                                                                                                                          <div class="PersonaCards_cardIcon__4cRrB">🏢</div>
-
-                                                                                                                                                                                                                                                            <h3 class="PersonaCards_cardTitle__Tyrhz">Enterprise Retailers</h3>
-
-                                                                                                                                                                                                                                                              <p class="PersonaCards_cardDescription__Lc6uv">Run alongside your existing PPC agency. Set your target ROI and we lock it in - no more fluctuating performance.</p>
-
-                                                                                                                                                                                                                                                                <ul class="PersonaCards_highlights__XsC3L">
-                                                                                                                                                                                                                                                                  <li class="PersonaCards_highlight__02M9R"><span class="PersonaCards_checkmark__3TYtA">✓</span>Locked-in target ROI</li>
-
-                                                                                                                                                                                                                                                                    <li class="PersonaCards_highlight__02M9R"><span class="PersonaCards_checkmark__3TYtA">✓</span>Works with your agency</li>
-
-                                                                                                                                                                                                                                                                      <li class="PersonaCards_highlight__02M9R"><span class="PersonaCards_checkmark__3TYtA">✓</span>True incrementality</li>
-                                                                                                                                                                                                                                                                      </ul>
-                                                                                                                                                                                                                                                                    </div>
-
-                                                                                                                                                                                                                                                                    <div class="PersonaCards_card__AD_D8">
-                                                                                                                                                                                                                                                                      <div class="PersonaCards_cardIcon__4cRrB">🤝</div>
-
-                                                                                                                                                                                                                                                                        <h3 class="PersonaCards_cardTitle__Tyrhz">Agencies</h3>
-
-                                                                                                                                                                                                                                                                          <p class="PersonaCards_cardDescription__Lc6uv">Add white-label Google Shopping to your services. Earn markup on every sale without any overhead.</p>
-
-                                                                                                                                                                                                                                                                            <ul class="PersonaCards_highlights__XsC3L">
-                                                                                                                                                                                                                                                                              <li class="PersonaCards_highlight__02M9R"><span class="PersonaCards_checkmark__3TYtA">✓</span>White-label partnership</li>
-
-                                                                                                                                                                                                                                                                                <li class="PersonaCards_highlight__02M9R"><span class="PersonaCards_checkmark__3TYtA">✓</span>No PPC expertise needed</li>
-
-                                                                                                                                                                                                                                                                                  <li class="PersonaCards_highlight__02M9R"><span class="PersonaCards_checkmark__3TYtA">✓</span>Hands-off revenue</li>
-                                                                                                                                                                                                                                                                                  </ul>
-                                                                                                                                                                                                                                                                                </div>
-                                                                                                                                                                                                                                                                              </div>
-                                                                                                                                                                                                                                                                            </div>
-                                                                                                                                                                                                                                                                          </section>
-                                                                                                                                                                                                                                                                          <section class="FooterCTA_section__uO_0T">
-                                                                                                                                                                                                                                                                            <div class="FooterCTA_container__iguBQ">
-                                                                                                                                                                                                                                                                              <div class="FooterCTA_ctaBox__cIEiy">
-                                                                                                                                                                                                                                                                                <div class="FooterCTA_ctaContent__TvqcO">
-                                                                                                                                                                                                                                                                                  <h2 class="FooterCTA_ctaHeading__DDJqx">Ready to Grow Your Revenue?</h2>
-
-                                                                                                                                                                                                                                                                                    <p class="FooterCTA_ctaText__U6Uiz">Start generating incremental orders on Google Ads today. Pay only for results.</p>
-
-                                                                                                                                                                                                                                                                                      <a href="https://app.retailerboost.com?utm_source=retailerboostplatform-com&amp;utm_medium=website&amp;utm_campaign=footer-cta" target="_blank" rel="noopener noreferrer nofollow noindex" class="FooterCTA_ctaButton__U5pyF">Get Started for Free</a>
-
-                                                                                                                                                                                                                                                                                        <p class="FooterCTA_ctaSubtext__5fUoe">No upfront costs • No sales, no charge • Cancel anytime</p>
-                                                                                                                                                                                                                                                                                        </div>
-                                                                                                                                                                                                                                                                                      </div>
-                                                                                                                                                                                                                                                                                    </div>
-                                                                                                                                                                                                                                                                                  </section>
-                                                                                                                                                                                                                                                                                  <!--$--><!--/$-->
-                                                                                                                                                                                                                                                                                </main>
-                                                                                                                                                                                                                                                                                <script src="/_next/static/chunks/webpack-57d7292b708c4567.js" id="_R_" async=""></script>
-                                                                                                                                                                                                                                                                                <script>(self.__next_f=self.__next_f||[]).push([0])</script>
-                                                                                                                                                                                                                                                                                <script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[7840,[\"239\",\"static/chunks/239-3c17a6d641bde0df.js\",\"177\",\"static/chunks/app/layout-51bf5895f6bceb01.js\"],\"default\"]\n3:I[9766,[],\"\"]\n4:I[8924,[],\"\"]\n5:I[4566,[\"345\",\"static/chunks/app/not-found-bff04b01ffe661c1.js\"],\"default\"]\n6:I[3188,[\"239\",\"static/chunks/239-3c17a6d641bde0df.js\",\"974\",\"static/chunks/app/page-032e3acc52302c40.js\"],\"default\"]\n7:I[1680,[\"239\",\"static/chunks/239-3c17a6d641bde0df.js\",\"974\",\"static/chunks/app/page-032e3acc52302c40.js\"],\"default\"]\n12:I[7150,[],\"\"]\n:HL[\"/_next/static/css/7f4726b455727581.css\",\"style\"]\n:HL[\"/_next/static/css/9ca7f0e1d91091e8.css\",\"style\"]\n"])</script>
-                                                                                                                                                                                                                                                                                <script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"WxZTAybvBsT5ApzcaxDJN\",\"p\":\"\",\"c\":[\"\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/7f4726b455727581.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[[\"$\",\"head\",null,{}],[\"$\",\"body\",null,{\"children\":[[\"$\",\"$L2\",null,{}],[\"$\",\"main\",null,{\"children\":[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"$L5\",null,{}],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]]}]]}]]}],{\"children\":[\"__PAGE__\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"$L6\",null,{}],[\"$\",\"$L7\",null,{}],[\"$\",\"div\",null,{\"className\":\"ComparisonTable_comparisonContainer__IX5BW\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"ComparisonTable_comparisonHeading___rT5m\",\"children\":\"How Our Google Ads Model Compares\"}],[\"$\",\"p\",null,{\"className\":\"ComparisonTable_comparisonIntro__EZ_dw\",\"children\":\"Many of our customers decide to run a multi-layered strategy, running both our service and their own Google ad campaigns. We've put a simple comparison below to highlight the differences.\"}],[\"$\",\"div\",null,{\"className\":\"ComparisonTable_comparisonTable__0FA1m\",\"children\":[[\"$\",\"div\",null,{\"className\":\"ComparisonTable_comparisonRow___aClD\",\"children\":[[\"$\",\"div\",null,{\"className\":\"ComparisonTable_featureCell__lVRmV\"}],[\"$\",\"div\",null,{\"className\":\"ComparisonTable_headerCell__nOvxt\",\"children\":[\"$\",\"div\",null,{\"className\":\"ComparisonTable_headerTitle__Y_oLB\",\"children\":\"RetailerBoost\"}]}],[\"$\",\"div\",null,{\"className\":\"ComparisonTable_headerCell__nOvxt\",\"children\":[\"$\",\"div\",null,{\"className\":\"ComparisonTable_headerTitle__Y_oLB\",\"children\":\"Your Own Google Ad Campaigns\"}]}]]}],[\"$\",\"div\",null,{\"className\":\"ComparisonTable_comparisonRow___aClD\",\"children\":[[\"$\",\"div\",null,{\"className\":\"ComparisonTable_featureCell__lVRmV\",\"children\":[\"$\",\"strong\",null,{\"children\":\"Learning Curve\"}]}],[\"$\",\"div\",null,{\"className\":\"ComparisonTable_valueCell__PZrPF\",\"children\":[[\"$\",\"span\",null,{\"className\":\"ComparisonTable_checkmark__Q7pX2\",\"children\":\"✓\"}],\" Zero learning curve\"]}],[\"$\",\"div\",null,{\"className\":\"ComparisonTable_valueCell__PZrPF\",\"children\":[[\"$\",\"span\",null,{\"className\":\"ComparisonTable_cross__O5Ln9\",\"children\":\"✗\"}],\" Need a Google ads expert\"]}]]}],[\"$\",\"div\",null,{\"className\":\"ComparisonTable_comparisonRow___aClD\",\"children\":[[\"$\",\"div\",null,{\"className\":\"ComparisonTable_featureCell__lVRmV\",\"children\":[\"$\",\"strong\",null,{\"children\":\"Pricing Model\"}]}],[\"$\",\"div\",null,{\"className\":\"ComparisonTable_valueCell__PZrPF\",\"children\":[[\"$\",\"span\",null,{\"className\":\"ComparisonTable_checkmark__Q7pX2\",\"children\":\"✓\"}],\" Risk-free CPA model\"]}],[\"$\",\"div\",null,{\"className\":\"ComparisonTable_valueCell__PZrPF\",\"children\":[[\"$\",\"span\",null,{\"className\":\"ComparisonTable_cross__O5Ln9\",\"children\":\"✗\"}],\" Risky CPC and CPM model\"]}]]}],[\"$\",\"div\",null,{\"className\":\"ComparisonTable_comparisonRow___aClD\",\"children\":[[\"$\",\"div\",null,{\"className\":\"ComparisonTable_featureCell__lVRmV\",\"children\":[\"$\",\"strong\",null,{\"children\":\"Error Messages\"}]}],[\"$\",\"div\",null,{\"className\":\"ComparisonTable_valueCell__PZrPF\",\"children\":[[\"$\",\"span\",null,{\"className\":\"ComparisonTable_checkmark__Q7pX2\",\"children\":\"✓\"}],\" Plain english suggestions\"]}],[\"$\",\"div\",null,{\"className\":\"ComparisonTable_valueCell__PZrPF\",\"children\":[[\"$\",\"span\",null,{\"className\":\"ComparisonTable_cross__O5Ln9\",\"children\":\"✗\"}],\" Obtuse error messages\"]}]]}],[\"$\",\"div\",null,{\"className\":\"ComparisonTable_comparisonRow___aClD\",\"children\":[[\"$\",\"div\",null,{\"className\":\"ComparisonTable_featureCell__lVRmV\",\"children\":[\"$\",\"strong\",null,{\"children\":\"Setup \u0026 Maintenance\"}]}],[\"$\",\"div\",null,{\"className\":\"ComparisonTable_valueCell__PZrPF\",\"children\":[[\"$\",\"span\",null,{\"className\":\"ComparisonTable_checkmark__Q7pX2\",\"children\":\"✓\"}],\" Setup in seconds, reviewed and approved in 4-7 days\"]}],[\"$\",\"div\",null,{\"className\":\"ComparisonTable_valueCell__PZrPF\",\"children\":[[\"$\",\"span\",null,{\"className\":\"ComparisonTable_cross__O5Ln9\",\"children\":\"✗\"}],\" Weeks to setup, constant maintenance \u0026 headaches\"]}]]}],[\"$\",\"div\",null,{\"className\":\"ComparisonTable_comparisonRow___aClD\",\"children\":[[\"$\",\"div\",null,{\"className\":\"ComparisonTable_featureCell__lVRmV\",\"children\":[\"$\",\"strong\",null,{\"children\":\"Ad Budget\"}]}],[\"$\",\"div\",null,{\"className\":\"ComparisonTable_valueCell__PZrPF\",\"children\":[\"$L8\",\" We fund campaigns\"]}],\"$L9\"]}],\"$La\",\"$Lb\"]}]]}],\"$Lc\",\"$Ld\",\"$Le\"],[\"$Lf\"],\"$L10\"]}],{},null,false]},null,false],\"$L11\",false]],\"m\":\"$undefined\",\"G\":[\"$12\",[]],\"s\":false,\"S\":true}\n"])</script>
-                                                                                                                                                                                                                                                                                <script>self.__next_f.push([1,"13:I[7950,[\"239\",\"static/chunks/239-3c17a6d641bde0df.js\",\"974\",\"static/chunks/app/page-032e3acc52302c40.js\"],\"default\"]\n14:I[499,[\"239\",\"static/chunks/239-3c17a6d641bde0df.js\",\"974\",\"static/chunks/app/page-032e3acc52302c40.js\"],\"default\"]\n15:I[4431,[],\"OutletBoundary\"]\n17:I[5278,[],\"AsyncMetadataOutlet\"]\n19:I[4431,[],\"ViewportBoundary\"]\n1b:I[4431,[],\"MetadataBoundary\"]\n1c:\"$Sreact.suspense\"\n8:[\"$\",\"span\",null,{\"className\":\"ComparisonTable_checkmark__Q7pX2\",\"children\":\"✓\"}]\n9:[\"$\",\"div\",null,{\"className\":\"ComparisonTable_valueCell__PZrPF\",\"children\":[[\"$\",\"span\",null,{\"className\":\"ComparisonTable_cross__O5Ln9\",\"children\":\"✗\"}],\" You fund campaigns\"]}]\na:[\"$\",\"div\",null,{\"className\":\"ComparisonTable_comparisonRow___aClD\",\"children\":[[\"$\",\"div\",null,{\"className\":\"ComparisonTable_featureCell__lVRmV\",\"children\":[\"$\",\"strong\",null,{\"children\":\"Target ROI\"}]}],[\"$\",\"div\",null,{\"className\":\"ComparisonTable_valueCell__PZrPF\",\"children\":[[\"$\",\"span\",null,{\"className\":\"ComparisonTable_checkmark__Q7pX2\",\"children\":\"✓\"}],\" Fixed commission ensures locked-in ROI\"]}],[\"$\",\"div\",null,{\"className\":\"ComparisonTable_valueCell__PZrPF\",\"children\":[[\"$\",\"span\",null,{\"className\":\"ComparisonTable_cross__O5Ln9\",\"children\":\"✗\"}],\" Variable ROI, unpredictable results\"]}]]}]\nb:[\"$\",\"div\",null,{\"className\":\"ComparisonTable_comparisonRow___aClD\",\"children\":[[\"$\",\"div\",null,{\"className\":\"ComparisonTable_featureCell__lVRmV\",\"children\":[\"$\",\"strong\",null,{\"children\":\"Tracking Privacy\"}]}],[\"$\",\"div\",null,{\"className\":\"ComparisonTable_valueCell__PZrPF\",\"children\":[[\"$\",\"span\",null,{\"className\":\"ComparisonTable_checkmark__Q7pX2\",\"children\":\"✓\"}],\" Minimal tracking, privacy-first\"]}],[\"$\",\"div\",null,{\"className\":\"ComparisonTable_valueCell__PZrPF\",\"children\":[[\"$\",\"span\",null,{\"className\":\"ComparisonTable_cross__O5Ln9\",\"children\":\"✗\"}],\" Complex tracking requirements\"]}]]}]\n"])</script>
-                                                                                                                                                                                                                                                                                <script>self.__next_f.push([1,"c:[\"$\",\"$L13\",null,{\"testimonials\":[{\"id\":24,\"rating\":5,\"quote\":\"I have created 73 additional sales so far, every extra helps so I am glad I signed up.\",\"author\":\"Adrian Turley\",\"title\":\"Managing Director\",\"company\":\"LPG Jets\"},{\"id\":16,\"rating\":5,\"quote\":\"Since integrating this on 31 July 2023, it has provided over 890 orders worth more than $30K of incremental revenue for my store. This has boosted our revenue by 10%! Setup was so simple.\",\"author\":\"Will Marston\",\"title\":\"CEO, Star Editions\",\"company\":\"Mr Men\"},{\"id\":12,\"rating\":5,\"quote\":\"I love simplicity. I don't have the time nor the know-how to run efficient ad campaigns. For a reasonable commission, they run ads and generate sales for us. It's great! Give it a try now!\",\"author\":\"Christina Charoniti\",\"title\":\"Director \u0026 Owner\",\"company\":\"Punk Cake\"},{\"id\":23,\"rating\":5,\"quote\":\"I strongly advise anyone to use this. It's easy to set up and the team have been very helpful. Sales have also been good which helps!\",\"author\":\"Peter Birney\",\"title\":\"Founder\",\"company\":null},{\"id\":19,\"rating\":5,\"quote\":\"Fantastic ad partners. Highly recommend for swift, hassle-free Google CSS managing. The commission on sale based system proves very convenient.\",\"author\":\"Eleonora\",\"title\":\"Founder\",\"company\":\"DemandUK\"},{\"id\":20,\"rating\":5,\"quote\":\"Our orders through our website have more than doubled since we started. It saves a ton of time as we don't have to manage and fund the ads, paying only for results is great! Even during our slower summer months, we're seeing over 500 orders per month.\",\"author\":\"Jon Wagstaff\",\"title\":\"Managing Director\",\"company\":\"Happy Candy\"}]}]\n"])</script>
-                                                                                                                                                                                                                                                                                <script>self.__next_f.push([1,"d:[\"$\",\"section\",null,{\"className\":\"PersonaCards_section__npfcS\",\"children\":[\"$\",\"div\",null,{\"className\":\"PersonaCards_container__rdYMA\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"PersonaCards_heading__MNzfS\",\"children\":\"Built for Every Business Type\"}],[\"$\",\"p\",null,{\"className\":\"PersonaCards_subheading__TG4Ak\",\"children\":[\"Whether you're a small merchant, enterprise retailer, or agency,\",[\"$\",\"br\",null,{}],\"RetailerBoost has a solution tailored to your needs.\"]}],[\"$\",\"div\",null,{\"className\":\"PersonaCards_cardsGrid__VrgKz\",\"children\":[[\"$\",\"div\",\"0\",{\"className\":\"PersonaCards_card__AD_D8\",\"children\":[[\"$\",\"div\",null,{\"className\":\"PersonaCards_cardIcon__4cRrB\",\"children\":\"🏪\"}],[\"$\",\"h3\",null,{\"className\":\"PersonaCards_cardTitle__Tyrhz\",\"children\":\"Small \u0026 Medium Businesses\"}],[\"$\",\"p\",null,{\"className\":\"PersonaCards_cardDescription__Lc6uv\",\"children\":\"No ad budget? No PPC expertise? No problem. We fund everything and you only pay when you make sales.\"}],[\"$\",\"ul\",null,{\"className\":\"PersonaCards_highlights__XsC3L\",\"children\":[[\"$\",\"li\",\"0\",{\"className\":\"PersonaCards_highlight__02M9R\",\"children\":[[\"$\",\"span\",null,{\"className\":\"PersonaCards_checkmark__3TYtA\",\"children\":\"✓\"}],\"Zero upfront costs\"]}],[\"$\",\"li\",\"1\",{\"className\":\"PersonaCards_highlight__02M9R\",\"children\":[[\"$\",\"span\",null,{\"className\":\"PersonaCards_checkmark__3TYtA\",\"children\":\"✓\"}],\"No technical knowledge required\"]}],[\"$\",\"li\",\"2\",{\"className\":\"PersonaCards_highlight__02M9R\",\"children\":[[\"$\",\"span\",null,{\"className\":\"PersonaCards_checkmark__3TYtA\",\"children\":\"✓\"}],\"Simple 12% commission\"]}]]}]]}],[\"$\",\"div\",\"1\",{\"className\":\"PersonaCards_card__AD_D8\",\"children\":[[\"$\",\"div\",null,{\"className\":\"PersonaCards_cardIcon__4cRrB\",\"children\":\"🏢\"}],[\"$\",\"h3\",null,{\"className\":\"PersonaCards_cardTitle__Tyrhz\",\"children\":\"Enterprise Retailers\"}],[\"$\",\"p\",null,{\"className\":\"PersonaCards_cardDescription__Lc6uv\",\"children\":\"Run alongside your existing PPC agency. Set your target ROI and we lock it in - no more fluctuating performance.\"}],[\"$\",\"ul\",null,{\"className\":\"PersonaCards_highlights__XsC3L\",\"children\":[[\"$\",\"li\",\"0\",{\"className\":\"PersonaCards_highlight__02M9R\",\"children\":[[\"$\",\"span\",null,{\"className\":\"PersonaCards_checkmark__3TYtA\",\"children\":\"✓\"}],\"Locked-in target ROI\"]}],[\"$\",\"li\",\"1\",{\"className\":\"PersonaCards_highlight__02M9R\",\"children\":[[\"$\",\"span\",null,{\"className\":\"PersonaCards_checkmark__3TYtA\",\"children\":\"✓\"}],\"Works with your agency\"]}],[\"$\",\"li\",\"2\",{\"className\":\"PersonaCards_highlight__02M9R\",\"children\":[[\"$\",\"span\",null,{\"className\":\"PersonaCards_checkmark__3TYtA\",\"children\":\"✓\"}],\"True incrementality\"]}]]}]]}],[\"$\",\"div\",\"2\",{\"className\":\"PersonaCards_card__AD_D8\",\"children\":[[\"$\",\"div\",null,{\"className\":\"PersonaCards_cardIcon__4cRrB\",\"children\":\"🤝\"}],[\"$\",\"h3\",null,{\"className\":\"PersonaCards_cardTitle__Tyrhz\",\"children\":\"Agencies\"}],[\"$\",\"p\",null,{\"className\":\"PersonaCards_cardDescription__Lc6uv\",\"children\":\"Add white-label Google Shopping to your services. Earn markup on every sale without any overhead.\"}],[\"$\",\"ul\",null,{\"className\":\"PersonaCards_highlights__XsC3L\",\"children\":[[\"$\",\"li\",\"0\",{\"className\":\"PersonaCards_highlight__02M9R\",\"children\":[[\"$\",\"span\",null,{\"className\":\"PersonaCards_checkmark__3TYtA\",\"children\":\"✓\"}],\"White-label partnership\"]}],[\"$\",\"li\",\"1\",{\"className\":\"PersonaCards_highlight__02M9R\",\"children\":[[\"$\",\"span\",null,{\"className\":\"PersonaCards_checkmark__3TYtA\",\"children\":\"✓\"}],\"No PPC expertise needed\"]}],[\"$\",\"li\",\"2\",{\"className\":\"PersonaCards_highlight__02M9R\",\"children\":[[\"$\",\"span\",null,{\"className\":\"PersonaCards_checkmark__3TYtA\",\"children\":\"✓\"}],\"Hands-off revenue\"]}]]}]]}]]}]]}]}]\n"])</script>
-                                                                                                                                                                                                                                                                                <script>self.__next_f.push([1,"e:[\"$\",\"$L14\",null,{}]\nf:[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/9ca7f0e1d91091e8.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]\n10:[\"$\",\"$L15\",null,{\"children\":[\"$L16\",[\"$\",\"$L17\",null,{\"promise\":\"$@18\"}]]}]\n11:[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$L19\",null,{\"children\":\"$L1a\"}],null],[\"$\",\"$L1b\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$1c\",null,{\"fallback\":null,\"children\":\"$L1d\"}]}]}]]}]\n"])</script>
-                                                                                                                                                                                                                                                                                <script>self.__next_f.push([1,"1a:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n16:null\n"])</script>
-                                                                                                                                                                                                                                                                                <script>self.__next_f.push([1,"18:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"RetailerBoost | Pay Only for Results\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Get incremental orders on Google Ads and pay only for orders generated. CPA-based Google Ads management for USA merchants. We setup, manage, and fund your campaigns.\"}],[\"$\",\"meta\",\"2\",{\"name\":\"robots\",\"content\":\"noindex, nofollow, nocache\"}],[\"$\",\"meta\",\"3\",{\"name\":\"googlebot\",\"content\":\"noindex, nofollow, noimageindex, max-video-preview:-1, max-image-preview:large, max-snippet:-1\"}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script>
-                                                                                                                                                                                                                                                                                <script>self.__next_f.push([1,"1d:\"$18:metadata\"\n"])</script>
-                                                                                                                                                                                                                                                                              </body>
-                                                                                                                                                                                                                                                                            </html>
+                </div>
+                <div class="HowItWorks_stepItem__VbbeH">
+                  <div class="HowItWorks_stepNumber__0BHvS">2</div>
+                  <div class="HowItWorks_stepContent__ukcTL">
+                    <h4 class="HowItWorks_stepTitle__uo2fo">Install Tracking</h4>
+                    <p class="HowItWorks_stepDescription__qvgax">Add our <a href="https://app.retailerboost.com/js/retailerboost.min.js?store=YOUR_STORE_ID" target="_blank" rel="noopener noreferrer" style="color:#00d9a3;text-decoration:none;">attribution script</a> and set up conversion reporting.</p>
+                  </div>
+                </div>
+                <div class="HowItWorks_stepItem__VbbeH">
+                  <div class="HowItWorks_stepNumber__0BHvS">3</div>
+                  <div class="HowItWorks_stepContent__ukcTL">
+                    <h4 class="HowItWorks_stepTitle__uo2fo">Watch Incremental Sales</h4>
+                    <p class="HowItWorks_stepDescription__qvgax">Track every order in your dashboard with full customer journey records.</p>
+                  </div>
+                </div>
+                <div class="HowItWorks_stepItem__VbbeH">
+                  <div class="HowItWorks_stepNumber__0BHvS">4</div>
+                  <div class="HowItWorks_stepContent__ukcTL">
+                    <h4 class="HowItWorks_stepTitle__uo2fo">Pay Commission Only</h4>
+                    <p class="HowItWorks_stepDescription__qvgax">Commission only on extra orders. No sales from us = no charge.</p>
+                  </div>
+                </div>
+                <div class="HowItWorks_stepItem__VbbeH">
+                  <div class="HowItWorks_stepNumber__0BHvS">5</div>
+                  <div class="HowItWorks_stepContent__ukcTL">
+                    <h4 class="HowItWorks_stepTitle__uo2fo">Scale or Pause Anytime</h4>
+                    <p class="HowItWorks_stepDescription__qvgax">No fixed contract. No retainers. Pause or scale instantly with one email.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="HowItWorks_column__mRBWN">
+              <h3 class="HowItWorks_columnHeading__QMyB9">What We Do</h3>
+              <div class="HowItWorks_stepsList__KoZ7H">
+                <div class="HowItWorks_stepItem__VbbeH">
+                  <div class="HowItWorks_stepNumber__0BHvS">1</div>
+                  <div class="HowItWorks_stepContent__ukcTL">
+                    <h4 class="HowItWorks_stepTitle__uo2fo">Find Your Buried Products</h4>
+                    <p class="HowItWorks_stepDescription__qvgax">We analyze your catalog to identify products getting zero impressions.</p>
+                  </div>
+                </div>
+                <div class="HowItWorks_stepItem__VbbeH">
+                  <div class="HowItWorks_stepNumber__0BHvS">2</div>
+                  <div class="HowItWorks_stepContent__ukcTL">
+                    <h4 class="HowItWorks_stepTitle__uo2fo">Connect Our Google Ads Account</h4>
+                    <p class="HowItWorks_stepDescription__qvgax">We link our own Google Ads account to your Merchant Center. Your account stays untouched.</p>
+                  </div>
+                </div>
+                <div class="HowItWorks_stepItem__VbbeH">
+                  <div class="HowItWorks_stepNumber__0BHvS">3</div>
+                  <div class="HowItWorks_stepContent__ukcTL">
+                    <h4 class="HowItWorks_stepTitle__uo2fo">Setup and Fund Campaigns</h4>
+                    <p class="HowItWorks_stepDescription__qvgax">We build Shopping campaigns for your underperforming products and fund them with our own capital.</p>
+                  </div>
+                </div>
+                <div class="HowItWorks_stepItem__VbbeH">
+                  <div class="HowItWorks_stepNumber__0BHvS">4</div>
+                  <div class="HowItWorks_stepContent__ukcTL">
+                    <h4 class="HowItWorks_stepTitle__uo2fo">Deliver Pure Incremental</h4>
+                    <p class="HowItWorks_stepDescription__qvgax">Every sale we generate is a sale you weren't getting before. Zero overlap with your existing campaigns.</p>
+                  </div>
+                </div>
+                <div class="HowItWorks_stepItem__VbbeH">
+                  <div class="HowItWorks_stepNumber__0BHvS">5</div>
+                  <div class="HowItWorks_stepContent__ukcTL">
+                    <h4 class="HowItWorks_stepTitle__uo2fo">Report Transparently</h4>
+                    <p class="HowItWorks_stepDescription__qvgax">Full visibility into which products we're surfacing and the revenue generated.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <div class="Testimonials_testimonialsContainer__F_5v0">
+        <div class="Testimonials_testimonialCard__btAPH">
+          <div class="Testimonials_rating__xBVqX"><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span><span class="Testimonials_star__uFxAV">★</span></div>
+          <blockquote class="Testimonials_quote__03kBn">"I have created 73 additional sales so far, every extra helps so I am glad I signed up."</blockquote>
+          <div class="Testimonials_author__7tVDE">
+            <div class="Testimonials_authorName__eBMNk">Adrian Turley</div>
+            <div class="Testimonials_authorTitle__CPvjE">Managing Director</div>
+            <div class="Testimonials_authorCompany__Kfpma">LPG Jets</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer CTA -->
+      <section class="FooterCTA_section__uO_0T">
+        <div class="FooterCTA_container__iguBQ">
+          <div class="FooterCTA_ctaBox__cIEiy">
+            <div class="FooterCTA_ctaContent__TvqcO">
+              <h2 class="FooterCTA_ctaHeading__DDJqx">Ready to Grow Your Revenue?</h2>
+              <p class="FooterCTA_ctaText__U6Uiz">Start generating incremental orders on Google Ads today. Pay only for results.</p>
+              <div style="display:flex;gap:1rem;justify-content:center;align-items:center;flex-wrap:wrap;">
+                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/sturrock/intro'});return false;" class="FooterCTA_ctaButton__U5pyF">Book a Call</a>
+                <a href="https://app.retailerboost.com?utm_source=retailerboostplatform-com&amp;utm_medium=website&amp;utm_campaign=footer-cta" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:1.25rem 3rem;background:transparent;color:#00d9a3;text-decoration:none;font-size:1.125rem;font-weight:700;border-radius:12px;border:2px solid #00d9a3;transition:all .3s ease;">Get Started</a>
+              </div>
+              <p class="FooterCTA_ctaSubtext__5fUoe">No upfront costs • No sales, no charge • Cancel anytime</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer style="padding:3rem 2rem 2rem;text-align:center;color:#aaa;border-top:1px solid rgba(0,217,163,0.2);margin-top:0;background:#0a0a0a;">
+      <p style="margin:0;font-size:0.9rem;color:#aaa;">© 2025 RetailerBoost. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
