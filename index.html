@@ -62,8 +62,16 @@
         .nav-cta-secondary {
           display: none !important;
         }
+        .nav-links {
+          display: none !important;
+        }
         .Hero_headline__ASVgO {
           font-size: 2rem !important;
+        }
+        /* Make 2-column grids single column on mobile */
+        .use-cases-grid,
+        .not-grid {
+          grid-template-columns: 1fr !important;
         }
       }
       /* FAQ expand/collapse */
@@ -160,7 +168,12 @@
     <nav class="Navigation_nav__PiYhp">
       <div class="Navigation_container__PSkJX">
         <a class="Navigation_logo__rl5XE" href="/"><img alt="RetailerBoost" width="180" height="40" decoding="async" data-nimg="1" style="color:transparent" src="/assets/images/RetailerBoost-Logo-Blue-White.png"/></a>
-        <div class="nav-cta-group" style="display:flex;gap:1rem;align-items:center;">
+        <div style="display:flex;gap:2rem;align-items:center;">
+          <div class="nav-links" style="display:flex;gap:1.5rem;align-items:center;">
+            <a href="#how-it-works" style="color:#e5e5e5;text-decoration:none;font-size:0.95rem;font-weight:500;transition:color 0.2s;">How It Works</a>
+            <a href="#pricing" style="color:#e5e5e5;text-decoration:none;font-size:0.95rem;font-weight:500;transition:color 0.2s;">Pricing</a>
+            <a href="#faq" style="color:#e5e5e5;text-decoration:none;font-size:0.95rem;font-weight:500;transition:color 0.2s;">FAQ</a>
+          </div>
           <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/sturrock/intro?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=247CFF'});return false;" class="Navigation_ctaButton__jQlAz">Book a Call</a>
         </div>
       </div>
@@ -176,7 +189,7 @@
 
             <h1 class="Hero_headline__ASVgO">Add Google Shopping Revenue<br/><span class="Hero_highlight__TtPR5">Without Asking for More Budget</span></h1>
 
-            <p class="Hero_subheadline__omnUM">We fund the ad spend. You keep the client relationship.<br/>Commission only on incremental sales. Zero risk for you or your client.</p>
+            <p class="Hero_subheadline__omnUM">We fund the ad spend. You keep the client relationship.<br/>Commission only on incremental sales. <strong style="color:#33D0C4;">No sales = no charge.</strong></p>
 
             <div class="Hero_ctaGroup__BKron">
               <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/sturrock/intro?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=247CFF'});return false;" class="Hero_ctaPrimary____c6c">Book a Call</a>
@@ -192,11 +205,30 @@
               <div style="display:flex;align-items:center;gap:0.5rem;color:#e5e5e5;font-size:0.95rem;">
                 <span style="color:#33D0C4;">✓</span> White-label available
               </div>
+              <div style="display:flex;align-items:center;gap:0.5rem;color:#e5e5e5;font-size:0.95rem;">
+                <span style="color:#33D0C4;">✓</span> 100% aligned incentives
+              </div>
             </div>
           </div>
         </div>
         <div class="Hero_gradient__onPwm"></div>
       </section>
+
+      <!-- Featured Testimonial -->
+      <div style="padding:4rem 2rem;">
+        <div style="max-width:900px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;">
+          <div style="margin-bottom:1rem;color:#FFD700;">★★★★★</div>
+          <blockquote style="font-size:1.35rem;line-height:1.9;color:#fff;font-style:italic;margin:0 0 2rem;max-width:800px;">"The pay-on-results model is genius. I was skeptical at first - how could someone else fund our advertising? But it works exactly as promised. We got sales from day one, and I love that we only pay after we've already made the sale. The <span style="color:#247CFF;font-weight:600;">27.5% order uplift</span> in our first week alone made this a no-brainer decision."</blockquote>
+          <div style="display:flex;align-items:center;gap:1.5rem;">
+            <img src="/assets/images/bea.jpeg" alt="Beatriz Nahuz, CEO of MenFirst" style="width:80px;height:80px;border-radius:50%;object-fit:cover;border:3px solid #247CFF;" onerror="this.style.display='none'">
+            <div style="text-align:left;">
+              <div style="color:#247CFF;font-weight:700;font-size:1.1rem;margin-bottom:0.25rem;">Beatriz Nahuz</div>
+              <div style="color:#ccc;font-size:0.95rem;margin-bottom:0.25rem;">CEO - MenFirst</div>
+              <div style="color:#666;font-size:0.9rem;">menfirst.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- The Problem for Agencies -->
       <section style="padding:5rem 2rem;">
@@ -222,14 +254,20 @@
       <!-- What We Actually Are -->
       <section style="padding:4rem 2rem;background:rgba(36,124,255,0.03);border-top:1px solid rgba(36,124,255,0.1);border-bottom:1px solid rgba(36,124,255,0.1);">
         <div style="max-width:900px;margin:0 auto;text-align:center;">
-          <h2 style="font-size:2rem;font-weight:700;color:#fff;margin-bottom:1.5rem;">What RetailerBoost Actually Is</h2>
-          <p style="font-size:1.2rem;color:#e5e5e5;line-height:1.8;margin-bottom:2rem;">We are ad spend investors, not an agency. We fund Google Shopping campaigns for your clients using our own capital. We only charge commission when we generate sales. Your existing campaigns stay untouched.</p>
+          <h2 style="font-size:2rem;font-weight:700;color:#fff;margin-bottom:1.5rem;">A Fully Funded, Incremental Google Shopping Layer</h2>
+          <p style="font-size:1.2rem;color:#e5e5e5;line-height:1.8;margin-bottom:1rem;">Google's algorithm buries 40-60% of most product catalogs. Zero impressions. Zero sales. We target that buried inventory and turn it into revenue—using our own ad spend.</p>
+          <p style="font-size:1.1rem;color:#aaa;line-height:1.8;margin-bottom:2rem;">Every sale we generate is a sale that wasn't happening before. That's what makes it incremental. Your existing campaigns keep every sale they're already generating.</p>
           
           <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:1.5rem;margin-top:2.5rem;">
             <div style="padding:1.5rem;">
               <div style="font-size:2.5rem;margin-bottom:0.75rem;">💰</div>
               <p style="color:#fff;font-weight:600;margin-bottom:0.5rem;">We Fund 100%</p>
               <p style="color:#aaa;font-size:0.95rem;margin:0;">All ad spend comes from us</p>
+            </div>
+            <div style="padding:1.5rem;">
+              <div style="font-size:2.5rem;margin-bottom:0.75rem;">📈</div>
+              <p style="color:#fff;font-weight:600;margin-bottom:0.5rem;">100% Incremental</p>
+              <p style="color:#aaa;font-size:0.95rem;margin:0;">Sales you weren't getting before</p>
             </div>
             <div style="padding:1.5rem;">
               <div style="font-size:2.5rem;margin-bottom:0.75rem;">🎯</div>
@@ -242,6 +280,36 @@
               <p style="color:#aaa;font-size:0.95rem;margin:0;">Your campaigns stay untouched</p>
             </div>
           </div>
+          
+          <div style="margin-top:3rem;padding:1.5rem 2rem;background:rgba(51,208,196,0.1);border:1px solid rgba(51,208,196,0.3);border-radius:12px;max-width:600px;margin-left:auto;margin-right:auto;">
+            <p style="color:#33D0C4;font-size:1.15rem;font-weight:600;text-align:center;margin:0;">No orders = No charge. Ever.</p>
+            <p style="color:#e5e5e5;font-size:1rem;text-align:center;margin:0.75rem 0 0;line-height:1.6;">We only earn when you earn. If we generate zero sales, your client pays zero dollars. Our incentives are completely aligned.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why This Works for Everyone -->
+      <section style="padding:4rem 2rem;background:rgba(51,208,196,0.03);border-top:1px solid rgba(51,208,196,0.1);border-bottom:1px solid rgba(51,208,196,0.1);">
+        <div style="max-width:800px;margin:0 auto;text-align:center;">
+          <h2 style="font-size:2rem;font-weight:700;color:#fff;margin-bottom:2rem;">Completely Aligned Incentives</h2>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:2rem;">
+            <div style="padding:1.5rem;">
+              <div style="font-size:2rem;margin-bottom:0.75rem;">🏢</div>
+              <p style="color:#fff;font-weight:600;margin-bottom:0.5rem;">Agency</p>
+              <p style="color:#aaa;font-size:0.95rem;margin:0;line-height:1.6;">Earns markup on every sale.<br/>Zero delivery work.<br/>No risk.</p>
+            </div>
+            <div style="padding:1.5rem;">
+              <div style="font-size:2rem;margin-bottom:0.75rem;">🛍️</div>
+              <p style="color:#fff;font-weight:600;margin-bottom:0.5rem;">Client</p>
+              <p style="color:#aaa;font-size:0.95rem;margin:0;line-height:1.6;">Pays only for results.<br/>No upfront costs.<br/>Cancel anytime.</p>
+            </div>
+            <div style="padding:1.5rem;">
+              <div style="font-size:2rem;margin-bottom:0.75rem;">📈</div>
+              <p style="color:#fff;font-weight:600;margin-bottom:0.5rem;">RetailerBoost</p>
+              <p style="color:#aaa;font-size:0.95rem;margin:0;line-height:1.6;">Earns when we generate sales.<br/>Funds all ad spend.<br/>Takes the risk.</p>
+            </div>
+          </div>
+          <p style="color:#e5e5e5;font-size:1.1rem;margin-top:2rem;max-width:600px;margin-left:auto;margin-right:auto;">Everyone wins when sales happen. If we generate zero orders, nobody pays anything. That's alignment.</p>
         </div>
       </section>
 
@@ -251,7 +319,7 @@
           <h2 style="font-size:2rem;font-weight:700;color:#fff;margin-bottom:1rem;text-align:center;">How Agencies Use This</h2>
           <p style="text-align:center;color:#e5e5e5;font-size:1.1rem;margin-bottom:3rem;">Common scenarios where agencies slot us in</p>
           
-          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:1.5rem;">
+          <div class="use-cases-grid" style="display:grid;grid-template-columns:repeat(2, 1fr);gap:1.5rem;">
             
             <div style="background:rgba(36,124,255,0.05);border:1px solid rgba(36,124,255,0.15);border-radius:16px;padding:2rem;">
               <div style="color:#247CFF;font-size:0.85rem;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.75rem;">Budget-Capped Clients</div>
@@ -285,7 +353,7 @@
       <section style="padding:4rem 2rem;background:rgba(255,255,255,0.02);">
         <div style="max-width:800px;margin:0 auto;">
           <h2 style="font-size:2rem;font-weight:700;color:#fff;margin-bottom:1rem;text-align:center;">Who Controls What</h2>
-          <p style="text-align:center;color:#e5e5e5;font-size:1.1rem;margin-bottom:2rem;">You stay in control of everything that matters</p>
+          <p style="text-align:center;color:#e5e5e5;font-size:1.1rem;margin-bottom:2rem;">You stay in control. We run incremental campaigns on products Google is ignoring.</p>
           
           <table class="control-table">
             <thead>
@@ -312,15 +380,19 @@
                 <td><span class="control-label control-agency">You</span></td>
               </tr>
               <tr>
+                <td>Merchant Center account & product feed</td>
+                <td><span class="control-label control-agency">You</span></td>
+              </tr>
+              <tr>
                 <td>Pause or stop anytime</td>
                 <td><span class="control-label control-agency">You</span></td>
               </tr>
               <tr>
-                <td>Ad spend funding</td>
+                <td>Ad spend funding (100%)</td>
                 <td><span class="control-label control-rb">RetailerBoost</span></td>
               </tr>
               <tr>
-                <td>Campaign setup and management</td>
+                <td>Incremental campaign setup</td>
                 <td><span class="control-label control-rb">RetailerBoost</span></td>
               </tr>
               <tr>
@@ -330,7 +402,7 @@
             </tbody>
           </table>
           
-          <p style="text-align:center;color:#aaa;font-size:0.95rem;margin-top:2rem;">You control scope. We handle execution. No overlap with your existing campaigns.</p>
+          <p style="text-align:center;color:#aaa;font-size:0.95rem;margin-top:2rem;">You control scope and the product feed. We run separate, incremental campaigns. Zero overlap with your existing work.</p>
         </div>
       </section>
 
@@ -344,8 +416,8 @@
             <div style="display:flex;gap:1.5rem;margin-bottom:2rem;align-items:flex-start;">
               <div style="min-width:40px;height:40px;background:linear-gradient(135deg, #247CFF, #1A64CC);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;">1</div>
               <div>
-                <h4 style="color:#fff;font-size:1.1rem;font-weight:600;margin:0 0 0.5rem;">You introduce the client</h4>
-                <p style="color:#e5e5e5;line-height:1.7;margin:0;">Connect us to the client's Google Merchant Center. You decide which products we can access via categories or tags. We handle onboarding.</p>
+                <h4 style="color:#fff;font-size:1.1rem;font-weight:600;margin:0 0 0.5rem;">Quick setup</h4>
+                <p style="color:#e5e5e5;line-height:1.7;margin:0;">Invite us to the client's Google Merchant Center (so we can review setup and connect our separate ads account). Install a few lines of JavaScript for attribution tracking. You decide which products we can target via categories or tags.</p>
               </div>
             </div>
             
@@ -377,7 +449,7 @@
       </section>
 
       <!-- Pricing Example -->
-      <section style="padding:4rem 2rem;">
+      <section id="pricing" style="padding:4rem 2rem;">
         <div style="max-width:700px;margin:0 auto;">
           <div style="background:rgba(36,124,255,0.05);border:1px solid rgba(36,124,255,0.2);border-radius:20px;padding:2.5rem;text-align:center;">
             <h2 style="font-size:1.75rem;font-weight:700;color:#fff;margin-bottom:2rem;">Simple Partner Pricing</h2>
@@ -400,7 +472,7 @@
       </section>
 
       <!-- Agency FAQs -->
-      <section style="padding:4rem 2rem;">
+      <section id="faq" style="padding:4rem 2rem;">
         <div style="max-width:900px;margin:0 auto;">
           <div style="border:1px solid rgba(36, 124, 255, .2);border-radius:20px;padding:3rem;">
             <h2 style="font-size:2rem;font-weight:700;color:#fff;margin-bottom:1rem;text-align:center;">Questions Agencies Ask</h2>
@@ -445,6 +517,16 @@
                 </button>
                 <div class="faq-answer">
                   <p>Yes. You control scope through the client's Merchant Center. Give us specific product categories, exclude certain SKUs, or hand us only the inventory you can't make work yourself. You set the boundaries, we operate within them.</p>
+                </div>
+              </div>
+              
+              <div class="faq-item">
+                <button class="faq-question" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
+                  <h4>Do you make changes to the Merchant Center or product feed?</h4>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>No. We never modify the Merchant Center account or product feed. We only need access to review the setup and connect our separate Google Ads account. The product feed stays exactly as you or the client configured it. You retain full ownership and control.</p>
                 </div>
               </div>
               
@@ -508,13 +590,53 @@
                 </div>
               </div>
               
+              <div class="faq-item">
+                <button class="faq-question" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
+                  <h4>Do you guarantee sales volume?</h4>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>No. We cannot promise how many orders we will generate. Some months may bring many orders, others fewer, or even zero. What we can promise is: if we generate zero orders, the client pays zero dollars. They only pay when we deliver value.</p>
+                </div>
+              </div>
+              
+              <div class="faq-item">
+                <button class="faq-question" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
+                  <h4>Are commissions refunded if a customer returns an order?</h4>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>No. Commission is based on the initial purchase value because we front the advertising cost that generated the sale, and Google doesn't refund those costs either. That said, we understand there are occasionally exceptional circumstances and are happy to review requests on a case-by-case basis.</p>
+                </div>
+              </div>
+              
+              <div class="faq-item">
+                <button class="faq-question" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
+                  <h4>How can I verify your tracking is accurate?</h4>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>You can inspect our attribution script directly—feel free to paste it into ChatGPT to see exactly what it does. Many clients also run third-party attribution tools alongside ours to compare data. We encourage this so you can verify our tracking against your own tools.</p>
+                </div>
+              </div>
+              
+              <div class="faq-item">
+                <button class="faq-question" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
+                  <h4>How is the ROI locked in?</h4>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>Because the client only pays a fixed percentage of each order, their ROI is mathematically locked in. At 12% commission, every $1 they pay returns $8.33 in revenue. We take on all the ad spend variability, so their cost-per-acquisition is always predictable.</p>
+                </div>
+              </div>
+              
               <div class="faq-item" style="border-bottom:none;">
                 <button class="faq-question" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
                   <h4>What's the catch?</h4>
                   <span class="faq-icon">+</span>
                 </button>
                 <div class="faq-answer">
-                  <p>There isn't one. We make money when we generate sales profitably. We take on all the ad spend risk. We can't guarantee volume—some stores work better than others. But if we generate nothing, you pay nothing. Our interests are aligned.</p>
+                  <p>There isn't one. We make money when we generate sales profitably. We take on all the ad spend risk. We can't guarantee volume—some stores work better than others. But if we generate nothing, your client pays nothing. Our interests are 100% aligned.</p>
                 </div>
               </div>
               
@@ -533,26 +655,26 @@
         <div style="max-width:800px;margin:0 auto;text-align:center;">
           <h2 style="font-size:2rem;font-weight:700;color:#fff;margin-bottom:2rem;">What We Are Not</h2>
           
-          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:1.5rem;">
-            <div style="padding:1.5rem;">
-              <div style="color:#e25555;font-size:1.25rem;margin-bottom:0.75rem;">✕</div>
+          <div class="not-grid" style="display:grid;grid-template-columns:repeat(2, 1fr);gap:1rem;max-width:500px;margin:0 auto;">
+            <div style="padding:1rem;background:rgba(255,255,255,0.03);border-radius:8px;">
+              <div style="color:#e25555;font-size:1.25rem;margin-bottom:0.5rem;">✕</div>
               <p style="color:#e5e5e5;font-size:1rem;margin:0;">Not an agency</p>
             </div>
-            <div style="padding:1.5rem;">
-              <div style="color:#e25555;font-size:1.25rem;margin-bottom:0.75rem;">✕</div>
+            <div style="padding:1rem;background:rgba(255,255,255,0.03);border-radius:8px;">
+              <div style="color:#e25555;font-size:1.25rem;margin-bottom:0.5rem;">✕</div>
               <p style="color:#e5e5e5;font-size:1rem;margin:0;">Not a competitor</p>
             </div>
-            <div style="padding:1.5rem;">
-              <div style="color:#e25555;font-size:1.25rem;margin-bottom:0.75rem;">✕</div>
+            <div style="padding:1rem;background:rgba(255,255,255,0.03);border-radius:8px;">
+              <div style="color:#e25555;font-size:1.25rem;margin-bottom:0.5rem;">✕</div>
               <p style="color:#e5e5e5;font-size:1rem;margin:0;">Not a consultant</p>
             </div>
-            <div style="padding:1.5rem;">
-              <div style="color:#e25555;font-size:1.25rem;margin-bottom:0.75rem;">✕</div>
+            <div style="padding:1rem;background:rgba(255,255,255,0.03);border-radius:8px;">
+              <div style="color:#e25555;font-size:1.25rem;margin-bottom:0.5rem;">✕</div>
               <p style="color:#e5e5e5;font-size:1rem;margin:0;">Not trying to take clients</p>
             </div>
           </div>
           
-          <p style="color:#aaa;font-size:1.1rem;margin-top:2rem;line-height:1.7;">We're ad spend investors. We put capital into campaigns we believe can generate profitable returns. We need agencies like you to identify the right clients and control scope. We're genuinely complementary.</p>
+          <p style="color:#aaa;font-size:1.1rem;margin-top:2rem;line-height:1.7;">We're ad spend investors. Every investment decision is based on data and performance—not guesswork. We need agencies like you to identify the right clients and control scope. We're genuinely complementary.</p>
         </div>
       </section>
 
@@ -599,7 +721,7 @@
               <div style="display:flex;gap:1rem;justify-content:center;align-items:center;flex-wrap:wrap;">
                 <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/sturrock/intro?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=247CFF'});return false;" class="FooterCTA_ctaButton__U5pyF">Book a Call</a>
               </div>
-              <p class="FooterCTA_ctaSubtext__5fUoe">No pitch. No pressure. Just a conversation.</p>
+              <p class="FooterCTA_ctaSubtext__5fUoe">No upfront costs • No sales, no charge • Cancel anytime</p>
             </div>
           </div>
         </div>
