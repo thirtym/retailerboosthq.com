@@ -49,19 +49,20 @@ Typically:
 
 ### Do Say
 
+- "Incremental sales" - every sale we generate is a sale that wasn't happening before
 - "We fund the ad spend, you keep the client relationship"
 - "No sales = no charge"
 - "We target inventory your campaigns aren't reaching"
+- "100% incremental - we only target products Google is ignoring"
 - "It's additive, not competitive"
 - "You can white-label it or add your own markup"
 - "We're ad spend investors, not an agency"
-- "Commission only on incremental sales"
 - "Zero risk for you or your client"
 
 ### Don't Say
 
 - "Growth hack" / "Unlock" / "Revolutionary" - avoid hype
-- "We'll manage your client's campaigns" - we don't
+- "We'll manage your client's campaigns" - we don't manage their campaigns. 
 - "Guaranteed results" - we can't guarantee volume
 - Anything that suggests we compete with agencies
 - Anything that suggests we want the client relationship
