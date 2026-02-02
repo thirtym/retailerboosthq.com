@@ -201,7 +201,7 @@
         // Build signup URL with UTM params
         // Uses incoming params if present, otherwise falls back to defaults
         window.getSignupUrl = function(contentDefault) {
-          var base = 'https://app.retailerboost.com/signup';
+          var base = 'https://dashboard.retailerboost.com/signup';
           var utmParams = new URLSearchParams();
           
           // utm_source: incoming or current hostname
@@ -269,7 +269,7 @@
           </div>
           <div style="display:flex;gap:0.75rem;align-items:center;">
             <a href="#" onclick="openCalendly('calendly-nav');return false;" style="color:#e5e5e5;text-decoration:none;font-size:0.95rem;font-weight:500;transition:color 0.2s;">Book a Call</a>
-            <a href="https://app.retailerboost.com/signup" data-signup="nav" target="_blank" rel="noopener" class="Navigation_ctaButton__jQlAz">Get Started</a>
+            <a href="https://dashboard.retailerboost.com/signup" data-signup="nav" target="_blank" rel="noopener" class="Navigation_ctaButton__jQlAz">Get Started</a>
           </div>
         </div>
       </div>
@@ -284,7 +284,7 @@
             <p class="Hero_subheadline__omnUM">We fund the ad spend. You keep the client relationship.<br/>Commission only on incremental sales. <strong style="color:#33D0C4;">No sales = no charge.</strong></p>
 
             <div class="Hero_ctaGroup__BKron" style="display:flex;flex-direction:column;align-items:center;gap:1rem;">
-              <a href="https://app.retailerboost.com/signup" data-signup="hero" target="_blank" rel="noopener" class="Hero_ctaPrimary____c6c" style="color:#fff;padding:1.25rem 3rem;font-size:1.2rem;">Get Started in 5 Minutes</a>
+              <a href="https://dashboard.retailerboost.com/signup" data-signup="hero" target="_blank" rel="noopener" class="Hero_ctaPrimary____c6c" style="color:#fff;padding:1.25rem 3rem;font-size:1.2rem;">Get Started in 5 Minutes</a>
               <p style="color:#e5e5e5;font-size:1rem;margin:0;">Got questions? <a href="#" onclick="openCalendly('calendly-hero');return false;" style="color:#fff;text-decoration:underline;">Book a call</a></p>
             </div>
 
@@ -921,7 +921,7 @@
               <h2 class="FooterCTA_ctaHeading__DDJqx">Let's Talk</h2>
               <p class="FooterCTA_ctaText__U6Uiz">15 minutes to see if this makes sense for your agency.</p>
               <div style="display:flex;gap:1rem;justify-content:center;align-items:center;flex-wrap:wrap;">
-                <a href="https://app.retailerboost.com/signup" data-signup="footer-cta" target="_blank" rel="noopener" class="FooterCTA_ctaButton__U5pyF">Get Started</a>
+                <a href="https://dashboard.retailerboost.com/signup" data-signup="footer-cta" target="_blank" rel="noopener" class="FooterCTA_ctaButton__U5pyF">Get Started</a>
                 <a href="#" onclick="openCalendly('calendly-footer');return false;" style="display:inline-flex;align-items:center;justify-content:center;padding:1rem 2rem;background:transparent;border:2px solid rgba(255,255,255,0.3);color:#fff;text-decoration:none;font-size:1.1rem;font-weight:600;border-radius:8px;transition:all .3s ease;">Book a Call</a>
               </div>
               <p class="FooterCTA_ctaSubtext__5fUoe">No upfront costs • No sales, no charge • Cancel anytime</p>
@@ -961,7 +961,7 @@
       }
       
       // Build the tracking URL
-      var trackUrl = 'https://app.retailerboost.com/signup-attribution?';
+      var trackUrl = 'https://dashboard.retailerboost.com/signup-attribution?';
       var trackParams = [];
       
       // Add UTM params
