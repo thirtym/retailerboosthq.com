@@ -9,11 +9,19 @@
       gtag('js', new Date());
       gtag('config', 'G-EP877TWWW9');
     </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "ulvcdt17b6");
+    </script>
     <!-- RB2B -->
     <script>!function(key){if(window.reb2b)return;window.reb2b={loaded:true};var s=document.createElement("script");s.async=true;s.src="https://ddwl4m2hdecbv.cloudfront.net/b/"+key+"/"+key+".js.gz";document.getElementsByTagName("script")[0].parentNode.insertBefore(s,document.getElementsByTagName("script")[0]);}("QO92DHLLLGN7");</script>
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="preload" as="image" href="/assets/images/RetailerBoost-Logo-Blue-White.png"/>
+    <link rel="preload" as="image" href="/assets/images/RetailerBoost-Logo-Light.png"/>
     <link rel="stylesheet" href="/_next/static/css/7f4726b455727581.css" data-precedence="next"/>
     <link rel="stylesheet" href="/_next/static/css/9ca7f0e1d91091e8.css" data-precedence="next"/>
     <!-- Calendly widget -->
@@ -193,7 +201,7 @@
         // Build signup URL with UTM params
         // Uses incoming params if present, otherwise falls back to defaults
         window.getSignupUrl = function(contentDefault) {
-          var base = 'https://app.retailerboost.com/signup';
+          var base = 'https://dashboard.retailerboost.com/signup';
           var utmParams = new URLSearchParams();
           
           // utm_source: incoming or current hostname
@@ -251,7 +259,7 @@
   <body>
     <nav class="Navigation_nav__PiYhp">
       <div class="Navigation_container__PSkJX">
-        <a class="Navigation_logo__rl5XE" href="/"><img alt="RetailerBoost" width="180" height="40" decoding="async" data-nimg="1" style="color:transparent" src="/assets/images/RetailerBoost-Logo-Blue-White.png"/></a>
+        <a class="Navigation_logo__rl5XE" href="/"><img alt="RetailerBoost" width="180" height="40" decoding="async" data-nimg="1" style="color:transparent" src="/assets/images/RetailerBoost-Logo-Light.png"/></a>
         <div style="display:flex;gap:2rem;align-items:center;">
           <div class="nav-links" style="display:flex;gap:1.5rem;align-items:center;">
             <a href="#scenarios" style="color:#e5e5e5;text-decoration:none;font-size:0.95rem;font-weight:500;transition:color 0.2s;">Scenarios</a>
@@ -261,7 +269,7 @@
           </div>
           <div style="display:flex;gap:0.75rem;align-items:center;">
             <a href="#" onclick="openCalendly('calendly-nav');return false;" style="color:#e5e5e5;text-decoration:none;font-size:0.95rem;font-weight:500;transition:color 0.2s;">Book a Call</a>
-            <a href="https://app.retailerboost.com/signup" data-signup="nav" target="_blank" rel="noopener" class="Navigation_ctaButton__jQlAz">Get Started</a>
+            <a href="https://dashboard.retailerboost.com/signup" data-signup="nav" target="_blank" rel="noopener" class="Navigation_ctaButton__jQlAz">Get Started</a>
           </div>
         </div>
       </div>
@@ -276,7 +284,7 @@
             <p class="Hero_subheadline__omnUM">We fund the ad spend. You keep the client relationship.<br/>Commission only on incremental sales. <strong style="color:#33D0C4;">No sales = no charge.</strong></p>
 
             <div class="Hero_ctaGroup__BKron" style="display:flex;flex-direction:column;align-items:center;gap:1rem;">
-              <a href="https://app.retailerboost.com/signup" data-signup="hero" target="_blank" rel="noopener" class="Hero_ctaPrimary____c6c" style="color:#fff;padding:1.25rem 3rem;font-size:1.2rem;">Get Started in 5 Minutes</a>
+              <a href="https://dashboard.retailerboost.com/signup" data-signup="hero" target="_blank" rel="noopener" class="Hero_ctaPrimary____c6c" style="color:#fff;padding:1.25rem 3rem;font-size:1.2rem;">Get Started in 5 Minutes</a>
               <p style="color:#e5e5e5;font-size:1rem;margin:0;">Got questions? <a href="#" onclick="openCalendly('calendly-hero');return false;" style="color:#fff;text-decoration:underline;">Book a call</a></p>
             </div>
 
@@ -913,7 +921,7 @@
               <h2 class="FooterCTA_ctaHeading__DDJqx">Let's Talk</h2>
               <p class="FooterCTA_ctaText__U6Uiz">15 minutes to see if this makes sense for your agency.</p>
               <div style="display:flex;gap:1rem;justify-content:center;align-items:center;flex-wrap:wrap;">
-                <a href="https://app.retailerboost.com/signup" data-signup="footer-cta" target="_blank" rel="noopener" class="FooterCTA_ctaButton__U5pyF">Get Started</a>
+                <a href="https://dashboard.retailerboost.com/signup" data-signup="footer-cta" target="_blank" rel="noopener" class="FooterCTA_ctaButton__U5pyF">Get Started</a>
                 <a href="#" onclick="openCalendly('calendly-footer');return false;" style="display:inline-flex;align-items:center;justify-content:center;padding:1rem 2rem;background:transparent;border:2px solid rgba(255,255,255,0.3);color:#fff;text-decoration:none;font-size:1.1rem;font-weight:600;border-radius:8px;transition:all .3s ease;">Book a Call</a>
               </div>
               <p class="FooterCTA_ctaSubtext__5fUoe">No upfront costs • No sales, no charge • Cancel anytime</p>
@@ -953,7 +961,7 @@
       }
       
       // Build the tracking URL
-      var trackUrl = 'https://app.retailerboost.com/signup-attribution?';
+      var trackUrl = 'https://dashboard.retailerboost.com/signup-attribution?';
       var trackParams = [];
       
       // Add UTM params

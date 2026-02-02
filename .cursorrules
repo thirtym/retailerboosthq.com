@@ -82,7 +82,7 @@
 - The UTM handler script will dynamically set the correct href
 
 ```html
-<a href="https://app.retailerboost.com/signup" data-signup="location-name" target="_blank" rel="noopener">
+<a href="https://dashboard.retailerboost.com/signup" data-signup="location-name" target="_blank" rel="noopener">
   Get Started
 </a>
 ```
